@@ -186,50 +186,53 @@ def create_buffer_post(channel_id, text, video, due_at, platform):
 
     return data
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-def main():
-    with open("posts_library.json", encoding="utf-8") as f:
-        library = json.load(f)
+# ── Fetch existing scheduled posts (duplicate check) ──────────────────────────
+def get_existing_scheduled(org_id, start_iso, end_iso):
+    """Returns a set of (channelId, dueAt_minute) for already scheduled posts."""
+    headers = {
+        "Authorization": f"Bearer {BUFFER_TOKEN}",
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+    }
+    payload = {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+            "name": "list_posts",
+            "arguments": {
+                "organizationId": org_id,
+                "status": ["scheduled"],
+                "dueAt": {"start": start_iso, "end": end_iso},
+                "first": 100,
+            }
+        }
+    }
+    try:
+        r = requests.post(
+            "https://mcp.buffer.com/mcp",
+            headers=headers,
+            json=payload,
+            timeout=30
+        )
+        result_text = ""
+        if "text/event-stream" in r.headers.get("Content-Type", ""):
+            for line in r.text.splitlines():
+                if line.startswith("data:"):
+                    result_text = line[5:].strip()
+        else:
+            result_text = r.text
 
-    channels = library["channels"]
-    today = date.today()
-    days  = [today + timedelta(days=i) for i in range(3)]
-
-    print(f"Scheduling posts for: {', '.join(str(d) for d in days)}\n")
-
-    results = []
-    for d in days:
-        day_name = DAYS_DE[d.weekday()]
-        print(f"[{d} {day_name}]")
-        posts = select_post(d, library)
-
-        for platform in ("instagram", "facebook", "tiktok"):
-            post = posts.get(platform)
-            if not post:
-                continue
-            channel_id = channels[platform]
-            vid  = video_url(day_name)
-            due  = due_at_iso(d, post["time"])
-            try:
-                create_buffer_post(
-                    channel_id=channel_id,
-                    text=post["caption"],
-                    video=vid,
-                    due_at=due,
-                    platform=platform,
-                )
-                print(f"  OK {platform:10s} {post['time']}")
-                results.append({"day": day_name, "platform": platform, "ok": True})
-            except Exception as e:
-                print(f"  FAIL {platform}: {e}", file=sys.stderr)
-                results.append({"day": day_name, "platform": platform, "ok": False})
-        print()
-
-    ok    = sum(1 for r in results if r["ok"])
-    total = len(results)
-    print(f"Done: {ok}/{total} posts scheduled.")
-    if ok < total:
-        sys.exit(1)
-
-if __name__ == "__main__":
-    main()
+        data = json.loads(result_text) if result_text else r.json()
+        content = data.get("result", {}).get("content", [])
+        if content:
+            posts_data = json.loads(content[0].get("text", "{}"))
+            edges = posts_data.get("edges", [])
+            # Return set of (channelId, dueAt truncated to minute)
+            return {
+                (e["node"]["channelId"], e["node"]["dueAt"][:16])
+                for e in edges
+            }
+    except Exception as ex:
+        print(f"  WARNING: Could not fetch existing posts for duplicate check: {ex}", file=sys.stderr)
+    r
