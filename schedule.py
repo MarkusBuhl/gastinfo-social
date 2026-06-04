@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-GASTiNFO.EU – Auto Social Media Scheduler
+GASTiNFO.EU - Auto Social Media Scheduler
 Runs every 3 days via GitHub Actions.
 Schedules next 3 days of posts to Buffer.
 Automatically selects seasonal content and event-specific posts.
@@ -9,7 +9,6 @@ Automatically selects seasonal content and event-specific posts.
 import os
 import sys
 import json
-import math
 import requests
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
@@ -23,7 +22,7 @@ VIENNA = ZoneInfo("Europe/Vienna")
 DAYS_DE = ["Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag","Sonntag"]
 
 # ── Easter calculation (Gauss algorithm) ─────────────────────────────────────
-def easter_date(year: int) -> date:
+def easter_date(year):
     a = year % 19
     b = year // 100
     c = year % 100
@@ -41,16 +40,15 @@ def easter_date(year: int) -> date:
     return date(year, month, day)
 
 # ── Season detection ──────────────────────────────────────────────────────────
-def get_season(d: date) -> str:
+def get_season(d):
     m = d.month
     if m in (12, 1, 2):  return "winter"
-    if m in (3, 4, 5):   return "frühling"
+    if m in (3, 4, 5):   return "fruehling"
     if m in (6, 7, 8):   return "sommer"
     return "herbst"
 
 # ── Event matching ────────────────────────────────────────────────────────────
-def get_active_event(d: date, events: list) -> dict | None:
-    """Return highest-priority event active on date d, or None."""
+def get_active_event(d, events):
     active = []
     for ev in events:
         if ev.get("easter_relative"):
@@ -63,10 +61,8 @@ def get_active_event(d: date, events: list) -> dict | None:
             ms, ds = ev["month_start"], ev["day_start"]
             me, de = ev["month_end"],   ev["day_end"]
             start = date(d.year, ms, ds)
-            # Handle year wrap (e.g. Silvester Dec 29 – Jan 2)
             if me < ms:
                 end = date(d.year + 1, me, de)
-                # also check previous year wrap
                 if d < start:
                     start = date(d.year - 1, ms, ds)
                     end   = date(d.year,     me, de)
@@ -75,7 +71,6 @@ def get_active_event(d: date, events: list) -> dict | None:
             if start <= d <= end:
                 active.append(ev)
         else:
-            # Fixed date range
             ev_start = date.fromisoformat(ev["start"])
             ev_end   = date.fromisoformat(ev["end"])
             if ev_start <= d <= ev_end:
@@ -86,42 +81,38 @@ def get_active_event(d: date, events: list) -> dict | None:
     return max(active, key=lambda e: e.get("priority", 0))
 
 # ── Post selection ────────────────────────────────────────────────────────────
-def select_post(d: date, library: dict) -> dict:
-    """
-    Priority:
-    1. Active event post
-    2. Seasonal override for this weekday
-    3. Default weekday post
-    """
+def select_post(d, library):
     day_name = DAYS_DE[d.weekday()]
     season   = get_season(d)
     event    = get_active_event(d, library.get("events", []))
 
     if event:
-        print(f"  → Event: {event['name']}")
+        print(f"  -> Event: {event['name']}")
         return {
             "instagram": event.get("instagram"),
             "facebook":  event.get("facebook"),
             "tiktok":    event.get("tiktok"),
         }
 
-    seasonal = library.get("seasonal", {}).get(season, {}).get(day_name)
+    # Map JSON season keys (frühling uses ascii key in JSON)
+    season_key = "frühling" if season == "fruehling" else season
+    seasonal = library.get("seasonal", {}).get(season_key, {}).get(day_name)
     if seasonal:
-        print(f"  → Seasonal ({season}) override")
+        print(f"  -> Seasonal ({season_key}) override")
         return seasonal
 
-    print(f"  → Default weekday post")
+    print(f"  -> Default weekday post")
     return library["weekdays"][day_name]
 
 # ── Video URL ─────────────────────────────────────────────────────────────────
-def video_url(day_name: str) -> str:
+def video_url(day_name):
     return (
         f"https://raw.githubusercontent.com/{GITHUB_REPO}/"
         f"{GITHUB_BRANCH}/posts/{day_name}/slideshow_reel.mp4"
     )
 
-# ── Buffer API ────────────────────────────────────────────────────────────────
-def due_at_iso(posting_date: date, time_str: str) -> str:
+# ── Buffer API via MCP server ─────────────────────────────────────────────────
+def due_at_iso(posting_date, time_str):
     h, m = map(int, time_str.split(":"))
     dt = datetime(
         posting_date.year, posting_date.month, posting_date.day,
@@ -129,9 +120,7 @@ def due_at_iso(posting_date: date, time_str: str) -> str:
     )
     return dt.isoformat()
 
-def create_buffer_post(channel_id: str, text: str, video: str,
-                       due_at: str, platform: str) -> dict:
-    """Schedule a post via Buffer MCP server (same as Cowork integration)."""
+def create_buffer_post(channel_id, text, video, due_at, platform):
     if platform == "instagram":
         metadata = {"instagram": {"type": "reel", "shouldShareToFeed": True}}
     elif platform == "facebook":
@@ -169,7 +158,7 @@ def create_buffer_post(channel_id: str, text: str, video: str,
         timeout=30
     )
 
-    # Handle SSE response (Buffer MCP uses text/event-stream)
+    # Handle SSE response
     result_text = ""
     if "text/event-stream" in r.headers.get("Content-Type", ""):
         for line in r.text.splitlines():
@@ -183,11 +172,9 @@ def create_buffer_post(channel_id: str, text: str, video: str,
     except Exception:
         data = {"raw": r.text}
 
-    # Check for errors in MCP response
     if "error" in data:
         raise RuntimeError(f"MCP error: {data['error']}")
 
-    # Extract post ID from MCP result content
     result = data.get("result", {})
     content = result.get("content", [])
     if content and isinstance(content, list):
@@ -205,7 +192,6 @@ def main():
         library = json.load(f)
 
     channels = library["channels"]
-
     today = date.today()
     days  = [today + timedelta(days=i) for i in range(3)]
 
@@ -222,14 +208,29 @@ def main():
             if not post:
                 continue
             channel_id = channels[platform]
-            vid        = video_url(day_name)
-            due        = due_at_iso(d, post["time"])
+            vid  = video_url(day_name)
+            due  = due_at_iso(d, post["time"])
             try:
-                result = create_buffer_post(
+                create_buffer_post(
                     channel_id=channel_id,
                     text=post["caption"],
                     video=vid,
                     due_at=due,
                     platform=platform,
                 )
-                print(f"  ✓ {plat
+                print(f"  OK {platform:10s} {post['time']}")
+                results.append({"day": day_name, "platform": platform, "ok": True})
+            except Exception as e:
+                print(f"  FAIL {platform}: {e}", file=sys.stderr)
+                results.append({"day": day_name, "platform": platform, "ok": False})
+        print()
+
+    ok    = sum(1 for r in results if r["ok"])
+    total = len(results)
+    print(f"Done: {ok}/{total} posts scheduled.")
+    if ok < total:
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
+                                                                                                                  
