@@ -131,49 +131,73 @@ def due_at_iso(posting_date: date, time_str: str) -> str:
 
 def create_buffer_post(channel_id: str, text: str, video: str,
                        due_at: str, platform: str) -> dict:
-    """Schedule a post via Buffer v1 REST API."""
-    metadata = {}
+    """Schedule a post via Buffer MCP server (same as Cowork integration)."""
     if platform == "instagram":
         metadata = {"instagram": {"type": "reel", "shouldShareToFeed": True}}
     elif platform == "facebook":
         metadata = {"facebook": {"type": "reel"}}
+    else:
+        metadata = {}
 
-    # Try newer Buffer API (MCP-compatible)
     headers = {
         "Authorization": f"Bearer {BUFFER_TOKEN}",
         "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
     }
     payload = {
-        "channelId":      channel_id,
-        "text":           text,
-        "schedulingType": "automatic",
-        "mode":           "customScheduled",
-        "dueAt":          due_at,
-        "assets":         [{"video": {"url": video}}],
-        "metadata":       metadata,
-    }
-    # Attempt newer API first
-    for url in [
-        "https://api.bufferapp.com/1/updates/create.json",
-    ]:
-        try:
-            # v1 API uses form-encoded with access_token param
-            form = {
-                "access_token":   BUFFER_TOKEN,
-                "profile_ids[]":  channel_id,
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "tools/call",
+        "params": {
+            "name": "create_post",
+            "arguments": {
+                "channelId":      channel_id,
                 "text":           text,
-                "scheduled_at":   due_at,
-                "media[video]":   video,
+                "schedulingType": "automatic",
+                "mode":           "customScheduled",
+                "dueAt":          due_at,
+                "assets":         [{"video": {"url": video}}],
+                "metadata":       metadata,
             }
-            r = requests.post(url, data=form, timeout=30)
-            r.raise_for_status()
-            data = r.json()
-            if data.get("success") or data.get("id"):
-                return data
-        except Exception as e:
-            print(f"    API attempt failed ({url}): {e}", file=sys.stderr)
+        }
+    }
 
-    raise RuntimeError("All Buffer API attempts failed")
+    r = requests.post(
+        "https://mcp.buffer.com/mcp",
+        headers=headers,
+        json=payload,
+        timeout=30
+    )
+
+    # Handle SSE response (Buffer MCP uses text/event-stream)
+    result_text = ""
+    if "text/event-stream" in r.headers.get("Content-Type", ""):
+        for line in r.text.splitlines():
+            if line.startswith("data:"):
+                result_text = line[5:].strip()
+    else:
+        result_text = r.text
+
+    try:
+        data = json.loads(result_text) if result_text else r.json()
+    except Exception:
+        data = {"raw": r.text}
+
+    # Check for errors in MCP response
+    if "error" in data:
+        raise RuntimeError(f"MCP error: {data['error']}")
+
+    # Extract post ID from MCP result content
+    result = data.get("result", {})
+    content = result.get("content", [])
+    if content and isinstance(content, list):
+        post_data_str = content[0].get("text", "{}")
+        try:
+            return json.loads(post_data_str)
+        except Exception:
+            return {"status": "scheduled", "raw": post_data_str}
+
+    return data
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
@@ -208,18 +232,4 @@ def main():
                     due_at=due,
                     platform=platform,
                 )
-                print(f"  ✓ {platform:10s} {post['time']}  →  scheduled")
-                results.append({"day": day_name, "platform": platform, "ok": True})
-            except Exception as e:
-                print(f"  ✗ {platform:10s}: {e}", file=sys.stderr)
-                results.append({"day": day_name, "platform": platform, "ok": False})
-        print()
-
-    ok    = sum(1 for r in results if r["ok"])
-    total = len(results)
-    print(f"Done: {ok}/{total} posts scheduled.")
-    if ok < total:
-        sys.exit(1)  # Fail the GitHub Action if any post failed
-
-if __name__ == "__main__":
-    main()
+                print(f"  ✓ {plat
