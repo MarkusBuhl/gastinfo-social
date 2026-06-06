@@ -235,4 +235,69 @@ def get_existing_scheduled(org_id, start_iso, end_iso):
             }
     except Exception as ex:
         print(f"  WARNING: Could not fetch existing posts for duplicate check: {ex}", file=sys.stderr)
-    r
+    return set()
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+def main():
+    # Load post library
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(script_dir, "posts_library.json"), encoding="utf-8") as f:
+        library = json.load(f)
+
+    channels  = library["channels"]
+    org_id    = "6a211817de506bce5254d906"
+    today     = datetime.now(VIENNA).date()
+    days_ahead = 3  # schedule next 3 days (script runs every 3 days)
+
+    # Fetch already-scheduled posts for the window we're about to schedule
+    window_start = datetime(today.year, today.month, today.day, 0, 0, tzinfo=VIENNA).isoformat()
+    window_end   = datetime(
+        (today + timedelta(days=days_ahead)).year,
+        (today + timedelta(days=days_ahead)).month,
+        (today + timedelta(days=days_ahead)).day,
+        23, 59, tzinfo=VIENNA
+    ).isoformat()
+
+    existing = get_existing_scheduled(org_id, window_start, window_end)
+    # Normalize to (channelId, date-string) for day-level duplicate check
+    existing_days = {(ch, due[:10]) for ch, due in existing}
+
+    print(f"Already scheduled in window: {len(existing_days)} channel-days")
+
+    scheduled_count = 0
+
+    for offset in range(days_ahead):
+        post_date = today + timedelta(days=offset)
+        day_name  = DAYS_DE[post_date.weekday()]
+        post      = select_post(post_date, library)
+
+        print(f"\n{post_date} ({day_name}):")
+
+        for platform in ("instagram", "facebook", "tiktok"):
+            channel_id = channels[platform]
+            content    = post.get(platform)
+            if not content:
+                print(f"  {platform}: no content, skipping")
+                continue
+
+            date_str = post_date.isoformat()
+            if (channel_id, date_str) in existing_days:
+                print(f"  {platform}: already scheduled, skipping")
+                continue
+
+            caption  = content.get("caption", "")
+            time_str = content.get("time", "12:00")
+            due_at   = due_at_iso(post_date, time_str)
+            vid      = video_url(day_name)
+
+            try:
+                result = create_buffer_post(channel_id, caption, vid, due_at, platform)
+                print(f"  {platform}: scheduled for {due_at} ✓")
+                scheduled_count += 1
+            except Exception as ex:
+                print(f"  {platform}: ERROR – {ex}", file=sys.stderr)
+
+    print(f"\nDone. {scheduled_count} new post(s) scheduled.")
+
+if __name__ == "__main__":
+    main()
