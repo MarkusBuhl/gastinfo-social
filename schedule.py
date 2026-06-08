@@ -250,7 +250,7 @@ def main():
     days_ahead = 3  # schedule next 3 days (script runs every 3 days)
 
     # Fetch already-scheduled posts for the window we're about to schedule
-    window_start = datetime(today.year, today.month, today.day, 0, 0, tzinfo=VIENNA).isoformat()
+    window_start = datetime((today + timedelta(days=1)).year, (today + timedelta(days=1)).month, (today + timedelta(days=1)).day, 0, 0, tzinfo=VIENNA).isoformat()
     window_end   = datetime(
         (today + timedelta(days=days_ahead)).year,
         (today + timedelta(days=days_ahead)).month,
@@ -266,7 +266,7 @@ def main():
 
     scheduled_count = 0
 
-    for offset in range(days_ahead):
+    for offset in range(1, days_ahead + 1):
         post_date = today + timedelta(days=offset)
         day_name  = DAYS_DE[post_date.weekday()]
         post      = select_post(post_date, library)
