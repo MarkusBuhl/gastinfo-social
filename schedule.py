@@ -3,6 +3,8 @@
 GASTiNFO.EU - Auto Social Media Scheduler
 Runs every 3 days via GitHub Actions.
 Schedules next 3 days of posts to Buffer.
+4-week content rotation: week_a (Features), week_b (Pain Points),
+week_c (FAQ), week_d (Benefits). ISO week % 4 selects the week.
 Automatically selects seasonal content and event-specific posts.
 """
 
@@ -80,6 +82,14 @@ def get_active_event(d, events):
         return None
     return max(active, key=lambda e: e.get("priority", 0))
 
+# ── Week rotation (ISO week % 4) ─────────────────────────────────────────────
+WEEK_KEYS = ["week_a", "week_b", "week_c", "week_d"]
+
+def get_week_key(d):
+    """Return week_a/b/c/d based on ISO week number."""
+    iso_week = d.isocalendar()[1]  # 1-53
+    return WEEK_KEYS[iso_week % 4]
+
 # ── Post selection ────────────────────────────────────────────────────────────
 def select_post(d, library):
     day_name = DAYS_DE[d.weekday()]
@@ -101,14 +111,31 @@ def select_post(d, library):
         print(f"  -> Seasonal ({season_key}) override")
         return seasonal
 
-    print(f"  -> Default weekday post")
+    # 4-week rotation
+    week_key = get_week_key(d)
+    weeks = library.get("weeks", {})
+    if weeks and week_key in weeks:
+        print(f"  -> Week rotation: {week_key}")
+        return weeks[week_key][day_name]
+
+    # Fallback: legacy weekdays key
+    print(f"  -> Default weekday post (fallback)")
     return library["weekdays"][day_name]
 
 # ── Video URL ─────────────────────────────────────────────────────────────────
-def video_url(day_name):
+def video_url(day_name, week_key="week_a"):
+    """Return GitHub raw URL for the reel video.
+    week_a uses the legacy path (posts/{day}/slideshow_reel.mp4).
+    week_b/c/d use posts/{week_key}/{day}/slideshow_reel.mp4.
+    """
+    if week_key == "week_a":
+        return (
+            f"https://raw.githubusercontent.com/{GITHUB_REPO}/"
+            f"{GITHUB_BRANCH}/posts/{day_name}/slideshow_reel.mp4"
+        )
     return (
         f"https://raw.githubusercontent.com/{GITHUB_REPO}/"
-        f"{GITHUB_BRANCH}/posts/{day_name}/slideshow_reel.mp4"
+        f"{GITHUB_BRANCH}/posts/{week_key}/{day_name}/slideshow_reel.mp4"
     )
 
 # ── Buffer API via MCP server ─────────────────────────────────────────────────
@@ -269,35 +296,4 @@ def main():
     for offset in range(1, days_ahead + 1):
         post_date = today + timedelta(days=offset)
         day_name  = DAYS_DE[post_date.weekday()]
-        post      = select_post(post_date, library)
-
-        print(f"\n{post_date} ({day_name}):")
-
-        for platform in ("instagram", "facebook", "tiktok"):
-            channel_id = channels[platform]
-            content    = post.get(platform)
-            if not content:
-                print(f"  {platform}: no content, skipping")
-                continue
-
-            date_str = post_date.isoformat()
-            if (channel_id, date_str) in existing_days:
-                print(f"  {platform}: already scheduled, skipping")
-                continue
-
-            caption  = content.get("caption", "")
-            time_str = content.get("time", "12:00")
-            due_at   = due_at_iso(post_date, time_str)
-            vid      = video_url(day_name)
-
-            try:
-                result = create_buffer_post(channel_id, caption, vid, due_at, platform)
-                print(f"  {platform}: scheduled for {due_at} ✓")
-                scheduled_count += 1
-            except Exception as ex:
-                print(f"  {platform}: ERROR – {ex}", file=sys.stderr)
-
-    print(f"\nDone. {scheduled_count} new post(s) scheduled.")
-
-if __name__ == "__main__":
-    main()
+    

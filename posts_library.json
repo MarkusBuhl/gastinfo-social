@@ -1,113 +1,418 @@
 {
-  "_comment": "GASTiNFO.EU – Post Library. Weekday posts rotate weekly. Events override weekday posts. Seasonal overrides replace default captions when season matches.",
-
+  "_comment": "GASTiNFO.EU – Post Library. 4-week rotation. ISO week % 4: 0=week_a (Features), 1=week_b (Pain Points), 2=week_c (FAQ), 3=week_d (Benefits).",
   "channels": {
     "instagram": "6a2119f3c687a22dd45bb075",
-    "facebook":  "6a211a37c687a22dd45bb13e",
-    "tiktok":    "6a211a62c687a22dd45bb1c0"
+    "facebook": "6a211a37c687a22dd45bb13e",
+    "tiktok": "6a211a62c687a22dd45bb1c0"
   },
-
-  "weekdays": {
-    "Montag": {
-      "instagram": {
-        "caption": "18 Widgets. Ein QR-Code. Alles, was Gäste brauchen.\n\nANREISE\n– Anfahrt & Wegbeschreibung\n– Parkmöglichkeiten\n– Schlüsseltresor\n– Check-in-Zeit\n\nAUFENTHALT\n– WLAN-Daten\n– Hausregeln\n– Mülltrennung\n– Notfallnummern\n\nSERVICE\n– Restaurant-Tipps\n– Events\n– Sehenswürdigkeiten\n– Taxi rufen\n\nPREMIUM\n– Custom Widget\n– Bewertungen\n– PDF-Dokumente\n– Eigenes Branding\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #airbnbtipps #vermieter #hotellerie #hoteltech #gastfreundschaft #gastgeber #qrcode #pwa #dsgvo #madeinaustria #hotelmarketing #widgets #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #urlaub2026 #DACH #smarthotel",
-        "time": "19:00"
+  "week_rotation": [
+    "week_a",
+    "week_b",
+    "week_c",
+    "week_d"
+  ],
+  "weeks": {
+    "week_a": {
+      "Montag": {
+        "instagram": {
+          "caption": "18 Widgets. Ein QR-Code. Alles, was Gäste brauchen.\n\nANREISE\n– Anfahrt & Wegbeschreibung\n– Parkmöglichkeiten\n– Schlüsseltresor\n– Check-in-Zeit\n\nAUFENTHALT\n– WLAN-Daten\n– Hausregeln\n– Mülltrennung\n– Notfallnummern\n\nSERVICE\n– Restaurant-Tipps\n– Events\n– Sehenswürdigkeiten\n– Taxi rufen\n\nPREMIUM\n– Custom Widget\n– Bewertungen\n– PDF-Dokumente\n– Eigenes Branding\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #pwa #hotelmarketing #widgets #propertymanagement #hospitalitytech #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "18 Widgets out of the box: Anreise, Aufenthalt, Service, Premium-Extras.\nEin QR-Code, kein Onboarding für den Gast.\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gästemappe #Hotellerie #Airbnb #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "18 Widgets. 1 QR-Code. Demo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "facebook": {
-        "caption": "18 Widgets out of the box: Anreise, Aufenthalt, Service, Premium-Extras.\nEin QR-Code, kein Onboarding für den Gast.\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gästemappe #Hotellerie #Airbnb #DACH #MadeInAustria",
-        "time": "20:00"
+      "Dienstag": {
+        "instagram": {
+          "caption": "Was ist deine Zeit wert?\n\n4 Stunden pro Woche für Standardfragen.\nx 4 Wochen = 16 Stunden pro Monat.\nx 50 EUR/Stunde = 800 EUR pro Monat.\n\nGASTiNFO Standard kostet 9,99 EUR/Monat.\n\nMathe ist klar.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #roi #zeitersparnis #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "4h gespart pro Woche x 4 Wochen x 50 EUR/h = 800 EUR/Monat.\nInvestition: 9,99 EUR.\nDemo: gastinfo.eu\n\n#ROI #Vermieter #Ferienwohnung #Gästemappe #Hotellerie #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "800 EUR sparen fuer 9,99 EUR. Mathe ist klar.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #roi",
+          "time": "20:30"
+        }
       },
-      "tiktok": {
-        "caption": "18 Widgets. 1 QR-Code. Demo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-        "time": "20:30"
+      "Mittwoch": {
+        "instagram": {
+          "caption": "Von 0 auf fertige digitale Gästemappe in 5 Minuten.\n\n01 KONTO ERSTELLEN – 30 Sekunden.\n02 UNTERKUNFT ANLEGEN – Name, Foto, Adresse.\n03 WIDGETS AKTIVIEREN – WLAN, Check-in, Hausregeln, Notfälle.\n04 QR-CODE TEILEN – Drucken oder per Mail/WhatsApp senden.\n\nKein Tech-Wissen nötig. Kein Onboarding-Call.\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #onboarding #setup #propertymanagement #hospitalitytech #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "4 Schritte: Registrieren, Unterkunft anlegen, Widgets wählen, QR-Code teilen.\nDemo: gastinfo.eu\n\n#Vermieter #Ferienwohnung #Onboarding #Gästemappe #Hotellerie #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "5 Minuten zur eigenen digitalen Gästemappe.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #setup",
+          "time": "20:30"
+        }
+      },
+      "Donnerstag": {
+        "instagram": {
+          "caption": "30+ Sprachen. Ein Apartment. Null Zusatzaufwand.\n\nGäste aus dem DACH-Raum: Deutsch, Italienisch, Tschechisch, Slowakisch, Ungarisch.\nGäste aus Europa: Englisch, Französisch, Spanisch, Niederländisch, Polnisch.\n\nDeepL übersetzt alles automatisch. 0 EUR Zusatzkosten.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #mehrsprachig #deepl #internationalguests #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "30+ Sprachen automatisch. DeepL übersetzt alles im Hintergrund.\nInternationale Gäste lesen Hausregeln in ihrer Muttersprache.\nDemo: gastinfo.eu\n\n#Mehrsprachig #DeepL #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "30+ Sprachen. Ein QR-Code. Null Aufwand.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #international",
+          "time": "20:30"
+        }
+      },
+      "Freitag": {
+        "instagram": {
+          "caption": "Für Gastgeber in Vorarlberg – Berghotels, Chalets, Almhütten, Ferienwohnungen, Pensionen.\n\nDas Problem: Internationale Gäste aus DE, NL, CZ, PL – alle mit Fragen.\n\nDie Lösung:\n+ 30+ Sprachen automatisch (DeepL)\n+ Offline-fähig – auch ohne Empfang\n+ Per QR-Code, keine App\n+ DSGVO-konform, Made in Austria\n\nDemo offen für alle: gastinfo.eu\n\n#vorarlberg #berghotel #chaletvorarlberg #ferienwohnungvorarlberg #digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #alpen #sommerurlaub #travel #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Für Gastgeber in Vorarlberg: Berghotels, Chalets, Almhütten.\n+ 30+ Sprachen + Offline + DSGVO, Made in Austria\nDemo: gastinfo.eu\n\n#Vorarlberg #Ferienwohnung #Vermieter #Berghotel #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "Vorarlberg-Gastgeber: kein Empfang, kein Problem.\nDemo: gastinfo.eu\n\n#vorarlberg #austria #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
+      },
+      "Samstag": {
+        "instagram": {
+          "caption": "5 Sterne beginnen vor der Anreise.\n\n01 KLARE ANFAHRT – Adresse, Karte, Parkhinweise.\n02 SELF-SERVICE CHECK-IN – Schlüsseltresor-Code, Hausordnung.\n03 LOKALE TIPPS – Restaurants, Events, Sehenswürdigkeiten.\n04 AKTUELLE INFOS – Updates in Echtzeit.\n\nVier Hebel. Mehr 5-Sterne-Bewertungen.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #5sterne #5star #bewertungen #propertymanagement #hospitalitytech #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "4 Hebel fuer mehr 5-Sterne: Anfahrt, Self-Check-in, Lokale Tipps, Echtzeit-Updates.\nDemo: gastinfo.eu\n\n#5Sterne #Bewertungen #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "4 Hebel fuer 5 Sterne. Demo: gastinfo.eu\n\n#5sterne #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
+      },
+      "Sonntag": {
+        "instagram": {
+          "caption": "Sommer 2026: was Gäste jetzt suchen.\n\n– Beste Bademöglichkeiten\n– Hitzeschutz-Tipps\n– Schattige Wanderwege\n– Sonnenschutz-Hinweise\n\nWas du vorbereiten kannst:\n– Pool-Anleitung als Widget\n– Grill-Hinweise\n– Klimaanlage-Bedienung\n– Sommer-Events der Region\n\nEinmal angelegt – beliebig oft abrufbar. In 30+ Sprachen.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #sommer2026 #summer2026 #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #urlaubinösterreich #sommerurlaub #travel #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Sommer-Content für deine Gästemappe: Pool, Grill, Badeseen, Events.\nEinmal anlegen – automatisch übersetzt.\nDemo: gastinfo.eu\n\n#Sommer2026 #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Sommer-Gäste automatisch informiert. Demo: gastinfo.eu\n\n#sommer2026 #airbnbhost #ferienwohnung #vermieterleben #fyp #digitalgästemappe",
+          "time": "20:30"
+        }
       }
     },
-    "Dienstag": {
-      "instagram": {
-        "caption": "Was ist deine Zeit wert?\n\n4 Stunden pro Woche für Standardfragen.\n× 4 Wochen = 16 Stunden pro Monat.\n× 50 €/Stunde Vermieter-Zeitwert = 800 € pro Monat.\n\nGASTiNFO Standard kostet 9,99 €/Monat.\n\nMathe ist klar.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #airbnbtipps #vermieter #hotellerie #hoteltech #gastfreundschaft #gastgeber #qrcode #pwa #dsgvo #madeinaustria #hotelmarketing #roi #zeitersparnis #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #fewovermieter #pension #gästehaus #urlaubinösterreich #urlaub2026 #DACH #smarthotel",
-        "time": "19:00"
+    "week_b": {
+      "Montag": {
+        "instagram": {
+          "caption": "Gaeste fragen immer wieder dasselbe.\n\nWLAN-Passwort? – geantwortet.\nParken? – geantwortet.\nCheck-in Uhrzeit? – geantwortet.\nSchlüsseltresor-Code? – geantwortet.\n\nZum 50. Mal diese Woche.\n\nEinmal in GASTiNFO eintragen – QR-Code ausdrucken – nie wieder erklären.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #zeitersparnis #painpoint #propertymanagement #hospitalitytech #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "WLAN? Parken? Check-in? – zum 50. Mal heute.\nGASTiNFO beantwortet alles automatisch per QR-Code.\nDemo: gastinfo.eu\n\n#Zeitersparnis #Vermieter #Ferienwohnung #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Gaeste-Fragen zum 50. Mal? Nie wieder.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "facebook": {
-        "caption": "4h gespart pro Woche × 4 Wochen × 50 €/h = 800 €/Monat.\nInvestition: 9,99 €.\nDemo: gastinfo.eu\n\n#ROI #Vermieter #Ferienwohnung #Gästemappe #Hotellerie #MadeInAustria",
-        "time": "20:00"
+      "Dienstag": {
+        "instagram": {
+          "caption": "Die Papiermappe klebt.\nDie Seiten sind vergilbt.\nDie Infos von 2022 stimmen nicht mehr.\n\nGastgeber updaten Papier selten.\nGäste merken es sofort.\n\nGASTiNFO:\n– Infos jederzeit in Echtzeit ändern\n– Gäste sehen immer die aktuelle Version\n– Kein Drucken. Kein Laminieren. Kein Ersetzen.\n\nPapier war gestern.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #papierlos #digital #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Vergilbte Papiermappe, veraltete Infos – Gäste merken das.\nGASTiNFO: Echtzeit-Updates, kein Drucken, immer aktuell.\nDemo: gastinfo.eu\n\n#Papierlos #Digital #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Papiermappe von 2022? Zeit fuer ein Upgrade.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe #paperless",
+          "time": "20:30"
+        }
       },
-      "tiktok": {
-        "caption": "800 € sparen für 9,99 €. Mathe ist klar.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #roi",
-        "time": "20:30"
+      "Mittwoch": {
+        "instagram": {
+          "caption": "Kein Empfang.\nKein WLAN.\nMitten in den Bergen.\n\nUnd dein Gast steht mit dem Smartphone in der Luft.\n\nGASTiNFO ist offline-fähig.\nBeim ersten Öffnen wird alles geladen und gecacht.\nDanach: kein Internet nötig.\n\nBerg-Gastgeber – das ist für euch.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #offline #pwa #berghotel #alpen #chalet #almhütte #propertymanagement #hospitalitytech #fewovermieter #österreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Kein Empfang am Berg – trotzdem alles abrufbar.\nGASTiNFO ist offline-fähig: einmal geladen, immer verfügbar.\nDemo: gastinfo.eu\n\n#Berghotel #Alpen #Offline #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Kein Netz am Berg? Kein Problem.\nDemo: gastinfo.eu\n\n#berghotel #alpen #airbnbhost #vermieterleben #fyp #hoteltech #digitalgästemappe #offline",
+          "time": "20:30"
+        }
+      },
+      "Donnerstag": {
+        "instagram": {
+          "caption": "Dein Gast kommt aus den Niederlanden.\nDeine Hausregeln sind auf Deutsch.\nEr liest sie nicht.\nDu bekommst eine schlechte Bewertung.\n\nNicht weil die Regeln falsch waren.\nSondern weil sie nicht ankamen.\n\nGASTiNFO übersetzt alles automatisch – DeepL, 30+ Sprachen.\nKein Aufwand. Null Mehrkosten.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #mehrsprachig #deepl #internationalguests #bewertungen #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Hausregeln auf Deutsch – niederländischer Gast versteht nichts – schlechte Bewertung.\nGASTiNFO: 30+ Sprachen automatisch.\nDemo: gastinfo.eu\n\n#Mehrsprachig #DeepL #Bewertungen #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Hausregeln nicht gelesen? Sprache war das Problem.\nDemo: gastinfo.eu\n\n#mehrsprachig #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
+      },
+      "Freitag": {
+        "instagram": {
+          "caption": "Für Gastgeber in Tirol – Chalets, Almhütten, Pensionen, Skihütten.\n\nEuere Gäste kommen aus ganz Europa.\nKaum einer spricht Deutsch.\nAlle haben Fragen.\n\nGASTiNFO:\n+ Skipass-Infos, Pistenpläne, Après-Ski als Widget\n+ 30+ Sprachen automatisch\n+ Offline-fähig – auch ohne Empfang im Berggebiet\n+ DSGVO-konform, Made in Austria\n\nDemo offen für alle: gastinfo.eu\n\n#tirol #berghotel #chalettirol #ferienwohnungtirol #digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #alpen #österreich #travel #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Für Gastgeber in Tirol: Chalets, Almhütten, Pensionen.\n+ Skipass, Pisten, Après-Ski als Widget\n+ 30+ Sprachen + Offline + DSGVO\nDemo: gastinfo.eu\n\n#Tirol #Berghotel #Skiurlaub #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "Tirol-Gastgeber: internationale Gäste, null Sprachbarriere.\nDemo: gastinfo.eu\n\n#tirol #skiurlaub #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
+      },
+      "Samstag": {
+        "instagram": {
+          "caption": "Mitternacht.\nDein Gast kommt an.\nDu schläfst.\nEr findet den Schlüsseltresor nicht.\n\nDas passiert jeden Tag in DACH.\n\nSelf-Service Check-in mit GASTiNFO:\n– Schlüsseltresor-Code als Widget\n– Schritt-fuer-Schritt Anreiseanleitung\n– Fotos von Eingang und Tür\n– In 30+ Sprachen\n\nKein Anruf. Keine Panik. Kein Stress.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #checkin #selfservice #schlüsseltresor #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Mitternachts-Check-in ohne Stress:\nSchlüsseltresor-Code, Anreiseanleitung, Fotos – per QR-Code.\nDemo: gastinfo.eu\n\n#CheckIn #Selfservice #Ferienwohnung #Vermieter #Airbnb #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "Mitternachts-Ankunft – ohne Anruf.\nDemo: gastinfo.eu\n\n#checkin #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
+      },
+      "Sonntag": {
+        "instagram": {
+          "caption": "Was kostet eine schlechte Bewertung wirklich?\n\n– 4,6 statt 4,9 Sterne: spürbar weniger Buchungen\n– Eine 3-Sterne-Bewertung braucht 5 Fünf-Sterne zum Ausgleich\n– Häufigster Grund: mangelhafte Kommunikation vor Ort\n\nNicht das Apartment.\nNicht der Preis.\nDie fehlende Information.\n\nGASTiNFO gibt Gästen alle Infos – automatisch, in ihrer Sprache.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #bewertungen #5sterne #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Schlechte Bewertungen kommen oft von fehlender Information, nicht schlechten Apartments.\nGASTiNFO löst genau das.\nDemo: gastinfo.eu\n\n#Bewertungen #Guestexperience #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Schlechte Bewertung wegen fehlender Info? Nie wieder.\nDemo: gastinfo.eu\n\n#bewertungen #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       }
     },
-    "Mittwoch": {
-      "instagram": {
-        "caption": "Von 0 auf fertige digitale Gästemappe in 5 Minuten.\n\n01 KONTO ERSTELLEN\nAuf gastinfo.eu/register – 30 Sekunden.\n\n02 UNTERKUNFT ANLEGEN\nName, Foto, Adresse.\n\n03 WIDGETS AKTIVIEREN\nWLAN, Check-in, Hausregeln, Notfälle. Klick und fertig.\n\n04 QR-CODE TEILEN\nDrucken oder per Mail/WhatsApp senden.\n\nKein Tech-Wissen nötig. Kein Onboarding-Call.\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #airbnbtipps #vermieter #hotellerie #hoteltech #gastfreundschaft #gastgeber #qrcode #pwa #dsgvo #madeinaustria #onboarding #setup #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #urlaub2026 #DACH #smarthotel",
-        "time": "19:00"
+    "week_c": {
+      "Montag": {
+        "instagram": {
+          "caption": "Was kostet eine digitale Gästemappe?\n\nGASTiNFO BASIC – 0 EUR/Monat\n+ 1 Unterkunft, 5 Widgets, QR-Code ohne Ablaufdatum\n\nGASTiNFO STANDARD – 9,99 EUR/Monat\n+ Unbegrenzte Unterkünfte, 18 Widgets\n+ DeepL 30+ Sprachen\n\nGASTiNFO PREMIUM – 29,90 EUR/Monat\n+ Custom Widgets, Eigenes Branding, PDF-Uploads\n+ Bewertungs-Widget, Eigene Domain\n\nKostenlos starten – keine Kreditkarte.\n\ngastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #pricing #kostenlos #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Digitale Gästemappe: Basic 0 EUR, Standard 9,99 EUR, Premium 29,90 EUR/Monat.\nKostenlos starten, keine Kreditkarte.\nDemo: gastinfo.eu\n\n#Pricing #Kostenlos #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Digitale Gästemappe ab 0 EUR. Kein Witz.\nDemo: gastinfo.eu\n\n#kostenlos #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "facebook": {
-        "caption": "4 Schritte zur eigenen digitalen Gästemappe:\n1. Registrieren\n2. Unterkunft anlegen\n3. Widgets wählen\n4. QR-Code teilen\nDemo: gastinfo.eu\n\n#Vermieter #Ferienwohnung #Onboarding #Gästemappe #Hotellerie #MadeInAustria",
-        "time": "20:00"
+      "Dienstag": {
+        "instagram": {
+          "caption": "Muessen meine Gäste eine App installieren?\n\nNein.\n\nGASTiNFO funktioniert als PWA – Progressive Web App.\n\nGast scannt QR-Code – Browser öffnet sich – fertig.\n\nKeine App. Kein Store. Kein Account. Keine Dateneingabe.\n\nEinfach für Gäste aus aller Welt – egal welches Smartphone.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #pwa #noapp #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Gäste App installieren? Nein.\nQR-Code scannen, Browser öffnet sich, fertig. Kein Store, kein Account.\nDemo: gastinfo.eu\n\n#NoApp #QRCode #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Keine App noetig. QR-Code – fertig.\nDemo: gastinfo.eu\n\n#noapp #qrcode #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "tiktok": {
-        "caption": "5 Minuten zur eigenen digitalen Gästemappe.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #setup",
-        "time": "20:30"
+      "Mittwoch": {
+        "instagram": {
+          "caption": "Wie lange dauert die Einrichtung?\n\nWir haben es gemessen.\n\n30 Sekunden: Registrieren\n60 Sekunden: Unterkunft anlegen\n2 Minuten: Widgets befüllen\n30 Sekunden: QR-Code teilen\n\nGesamt: unter 5 Minuten.\n\nKein Onboarding-Call. Kein Tutorial. Kein Tech-Wissen nötig.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #setup #5minuten #onboarding #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Einrichtung in unter 5 Minuten – gemessen.\n30s Registrieren, 1min Unterkunft, 2min Widgets, 30s QR-Code.\nDemo: gastinfo.eu\n\n#Setup #5Minuten #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Einrichtung in 5 Minuten – ich hab's gezählt.\nDemo: gastinfo.eu\n\n#setup #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
+      },
+      "Donnerstag": {
+        "instagram": {
+          "caption": "Bin ich DSGVO-konform mit GASTiNFO?\n\nJa. Vollständig.\n\n+ Datenhaltung ausschliesslich in der EU\n+ Keine Gästedaten gespeichert\n+ Individuelle Gast-Codes – kein Tracking\n+ Nur notwendige Daten – kein Profiling\n+ Made in Austria\n\nFür DACH-Vermieter ist DSGVO Pflicht – nicht Optional.\nGASTiNFO wurde von Anfang an datenschutzfreundlich entwickelt.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #dsgvo #gdpr #datenschutz #eu #propertymanagement #hospitalitytech #fewovermieter #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "DSGVO-konform: EU-Datenhaltung, keine Gästedaten, Made in Austria.\nFür DACH-Vermieter ist das Pflicht, kein Bonus.\nDemo: gastinfo.eu\n\n#DSGVO #Datenschutz #MadeInAustria #Ferienwohnung #Vermieter #DACH",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "DSGVO-konform, Made in Austria. Kein Risiko.\nDemo: gastinfo.eu\n\n#dsgvo #madeinaustria #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
+      },
+      "Freitag": {
+        "instagram": {
+          "caption": "Für Gastgeber in Salzburg – Stadthotels, Landgasthöfe, Seen, Berge.\n\nSalzburg-Gäste kommen aus ganz Europa und erwarten klare Infos.\n\nGASTiNFO:\n+ Mozarteum, Festspiele, Altstadt als Widget-Tipps\n+ 30+ Sprachen automatisch\n+ Offline-fähig für Berggäste\n+ DSGVO-konform, Made in Austria\n\nDemo offen für alle: gastinfo.eu\n\n#salzburg #salzburgcity #salzburgland #stadthotel #landgasthof #digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #festspiele #österreich #travel #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Für Gastgeber in Salzburg: Stadthotels, Landgasthöfe, Ferienwohnungen.\n+ Festspiele, Altstadt als Widget + 30+ Sprachen + DSGVO\nDemo: gastinfo.eu\n\n#Salzburg #Festspiele #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "Salzburg-Gastgeber: Festspiele, Altstadt, Seen als Widget.\nDemo: gastinfo.eu\n\n#salzburg #austria #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
+      },
+      "Samstag": {
+        "instagram": {
+          "caption": "Kann ich Infos jederzeit ändern?\n\nJa. In Echtzeit.\n\nGast schläft noch.\nDu änderst den WLAN-Code.\nGast scannt – sieht sofort den neuen Code.\n\nKein Drucken. Kein Laminieren. Kein Tauschen.\n\nPerfekt für:\n– Saisonale Öffnungszeiten\n– Neue Restaurant-Empfehlungen\n– Aktualisierte Hausregeln\n– Kurzfristige Bauarbeiten oder Sperrungen\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #echtzeit #updates #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Infos in Echtzeit ändern – Gäste sehen es sofort beim nächsten Scan.\nKein Drucken, kein Tauschen.\nDemo: gastinfo.eu\n\n#Echtzeit #Updates #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "WLAN-Passwort geaendert? Gast sieht's sofort.\nDemo: gastinfo.eu\n\n#echtzeit #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
+      },
+      "Sonntag": {
+        "instagram": {
+          "caption": "So sieht deine Gästemappe für deine Gäste aus.\n\nGast scannt QR-Code:\n\nANKUNFT\n– Anfahrt, Parken, Eingangs-Foto\n– Schlüsseltresor-Code\n\nAUFENTHALT\n– WLAN-Daten\n– Hausregeln\n– Mülltrennung\n\nEMPFEHLUNGEN\n– Restaurants\n– Sehenswürdigkeiten\n– Lokale Events\n\nNOTFALL\n– Notfallnummern\n– Nächstes Krankenhaus\n\nAlles in ihrer Sprache. Überall abrufbar.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #guestview #checkin #propertymanagement #hospitalitytech #fewovermieter #pension #gästehaus #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "So sieht deine Gästemappe für Gäste aus: Ankunft, Aufenthalt, Empfehlungen, Notfall – in ihrer Sprache.\nDemo: gastinfo.eu\n\n#GuestView #Guestexperience #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "So sehen Gäste deine Mappe – in ihrer Sprache.\nDemo: gastinfo.eu\n\n#guestview #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       }
     },
-    "Donnerstag": {
-      "instagram": {
-        "caption": "30+ Sprachen. Ein Apartment. Null Zusatzaufwand.\n\nGäste aus dem DACH-Raum:\n– Deutsch – Italienisch – Tschechisch – Slowakisch – Ungarisch\n\nGäste aus Europa:\n– Englisch – Französisch – Spanisch – Niederländisch – Polnisch\n\nDeepL übersetzt alles automatisch. Mehrsprachigkeit+ in Standard und Premium inkludiert. 0 € Zusatzkosten.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #airbnbtipps #vermieter #hotellerie #hoteltech #gastfreundschaft #gastgeber #qrcode #pwa #dsgvo #madeinaustria #mehrsprachig #deepl #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #internationalguests #fewovermieter #pension #gästehaus #urlaubinösterreich #urlaub2026 #DACH #smarthotel",
-        "time": "19:00"
+    "week_d": {
+      "Montag": {
+        "instagram": {
+          "caption": "Was Top-Gastgeber anders machen.\n\nDurchschnittlich:\n– Wartet auf Gäste-Fragen\n– Beantwortet dieselben Fragen immer wieder\n– Infos auf Papier\n– Hofft auf gute Bewertungen\n\nTop-Gastgeber:\n– Beantwortet Fragen bevor sie gestellt werden\n– Alles einmal digital angelegt\n– Skaliert ohne Mehraufwand\n– Bekommt systematisch 5 Sterne\n\nDer Unterschied: proaktive Information.\nDas Werkzeug: GASTiNFO.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #topgastgeber #proaktiv #bewertungen #5sterne #propertymanagement #hospitalitytech #fewovermieter #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Top-Gastgeber beantworten Fragen, bevor sie gestellt werden.\nGASTiNFO ist das Werkzeug dafür.\nDemo: gastinfo.eu\n\n#TopGastgeber #Proaktiv #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Top-Gastgeber vs. Durchschnitt – der Unterschied.\nDemo: gastinfo.eu\n\n#topgastgeber #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "facebook": {
-        "caption": "30+ Sprachen automatisch. DeepL übersetzt alles im Hintergrund.\nInternationale Gäste lesen Hausregeln und Tipps in ihrer Muttersprache.\nDemo: gastinfo.eu\n\n#Mehrsprachig #DeepL #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
-        "time": "20:00"
+      "Dienstag": {
+        "instagram": {
+          "caption": "Papier vs. Digital – der ehrliche Vergleich.\n\nPAPIER:\n– Veraltet schnell\n– Nur eine Sprache\n– Gast muss es finden\n– Drucken, Laminieren, Ersetzen\n– Kein Update ohne Neuauflage\n\nGASTiNFO DIGITAL:\n+ Immer aktuell\n+ 30+ Sprachen automatisch\n+ Offline-fähig\n+ Einmal anlegen – fertig\n+ QR-Code immer dabei\n+ Echtzeit-Updates\n\nDie Wahl liegt bei dir.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #papiervsdigital #digital #papierlos #propertymanagement #hospitalitytech #fewovermieter #pension #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Papier vs. Digital:\nPapier: veraltet, eine Sprache, kein Update.\nGASTiNFO: immer aktuell, 30+ Sprachen, Echtzeit.\nDemo: gastinfo.eu\n\n#PapiervsDigital #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Papier vs. Digital – kein fairer Vergleich.\nDemo: gastinfo.eu\n\n#papervsdigital #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "tiktok": {
-        "caption": "30+ Sprachen. Ein QR-Code. Null Aufwand.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #international",
-        "time": "20:30"
-      }
-    },
-    "Freitag": {
-      "instagram": {
-        "caption": "Für Gastgeber in Vorarlberg – Berghotels, Chalets, Almhütten, Ferienwohnungen, Pensionen.\n\nDas Problem: Internationale Gäste aus DE, NL, CZ, PL – alle mit Fragen.\n\nDie Lösung:\n✓ 30+ Sprachen automatisch (DeepL)\n✓ Offline-fähig – auch ohne Empfang\n✓ Per QR-Code, keine App\n✓ DSGVO-konform · Made in Austria\n\nDemo offen für alle: gastinfo.eu\n\n#vorarlberg #berghotel #chaletvorarlberg #ferienwohnungvorarlberg #digitalgästemappe #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #qrcode #dsgvo #madeinaustria #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #alpen #sommerurlaub #DACH #travel #urlaubinösterreich",
-        "time": "11:00"
+      "Mittwoch": {
+        "instagram": {
+          "caption": "3 Dinge die Gäste in den ersten 10 Minuten suchen.\n\n01 WLAN-PASSWORT\nSie wollen ins Internet. Sofort.\n– WLAN-Widget: Netzwerk + Passwort, kopierbar.\n\n02 PARKPLATZ / EINGANG\nSie stehen draußen und wissen nicht wohin.\n– Anfahrt-Widget: Karte, Fotos, Schritt-fuer-Schritt.\n\n03 CHECK-IN ABLAUF\nWann? Wo? Schlüssel wo?\n– Check-in Widget: Zeiten, Tresor-Code, Fotos.\n\nAlle drei per QR-Code mit GASTiNFO.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #wlan #checkin #parken #top3 #propertymanagement #hospitalitytech #fewovermieter #pension #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Die 3 ersten Gäste-Fragen: WLAN, Parken, Check-in.\nAlle drei per QR-Code mit GASTiNFO.\nDemo: gastinfo.eu\n\n#WLAN #CheckIn #Parken #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "WLAN, Parken, Check-in – die Top-3 Gaestefragen.\nDemo: gastinfo.eu\n\n#wlan #checkin #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "facebook": {
-        "caption": "Für Gastgeber in Vorarlberg: Berghotels, Chalets, Almhütten, FeWo, Pensionen.\n✓ 30+ Sprachen\n✓ Offline-fähig auch ohne Empfang\n✓ DSGVO · Made in Austria\nDemo: gastinfo.eu\n\n#Vorarlberg #Ferienwohnung #Vermieter #Hotellerie #Berghotel #DACH #MadeInAustria",
-        "time": "13:00"
+      "Donnerstag": {
+        "instagram": {
+          "caption": "Premium-Features für professionelle Vermieter.\n\nGASTiNFO PREMIUM – 29,90 EUR/Monat:\n\nEIGENES BRANDING\nDein Logo. Deine Farben. Deine Domain.\n\nPDF-UPLOADS\nHausprospekt, Wanderkarten, Menükarten als Download.\n\nBEWERTUNGS-WIDGET\nGäste direkt zu Google, Airbnb oder Booking leiten.\n\nCUSTOM WIDGET\nJeder Inhalt – frei konfigurierbar.\n\nEIGENE DOMAIN\nNicht gastinfo.eu/dein-name – sondern deine-unterkunft.at\n\nFür Hotels, Pensionen, professionelle Vermieter.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #premium #branding #eigenedomin #propertymanagement #hospitalitytech #fewovermieter #pension #hotel #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "GASTiNFO Premium: Branding, PDFs, Bewertungs-Widget, Custom Widget, eigene Domain.\nFür professionelle Vermieter und Hotels.\nDemo: gastinfo.eu\n\n#Premium #Branding #Hotellerie #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Premium-Features fuer professionelle Gastgeber.\nDemo: gastinfo.eu\n\n#premium #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       },
-      "tiktok": {
-        "caption": "Vorarlberg-Gastgeber: kein Empfang, kein Problem.\nDemo: gastinfo.eu\n\n#vorarlberg #austria #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
-        "time": "20:00"
-      }
-    },
-    "Samstag": {
-      "instagram": {
-        "caption": "5 Sterne beginnen vor der Anreise.\n\n01 KLARE ANFAHRT – Adresse, Karte, Parkhinweise.\n02 SELF-SERVICE CHECK-IN – Schlüsseltresor-Code, Hausordnung.\n03 LOKALE TIPPS – Restaurants, Events, Sehenswürdigkeiten.\n04 AKTUELLE INFOS – Updates in Echtzeit.\n\nVier Hebel. Mehr 5-Sterne-Bewertungen.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #airbnbtipps #vermieter #hotellerie #hoteltech #gastfreundschaft #gastgeber #qrcode #dsgvo #madeinaustria #5sterne #5star #bewertungen #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #checkin #fewovermieter #pension #gästehaus #urlaubinösterreich #urlaub2026 #DACH",
-        "time": "11:00"
+      "Freitag": {
+        "instagram": {
+          "caption": "Für Gastgeber in der Steiermark – Weinregionen, Thermalbäder, Naturparks.\n\nSteirische Gäste kommen für Weinlese, Wandern, Erholung.\nSie wollen lokale Infos – in ihrer Sprache.\n\nGASTiNFO:\n+ Buschenschank-Tipps, Weinrouten, Thermalbäder als Widget\n+ 30+ Sprachen automatisch\n+ Offline-fähig für Naturparkregionen\n+ DSGVO-konform, Made in Austria\n\nDemo offen für alle: gastinfo.eu\n\n#steiermark #styria #weinregion #therme #naturpark #digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #weinlese #österreich #travel #urlaubinösterreich #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Für Gastgeber in der Steiermark: Weinregionen, Thermalbäder, Naturparks.\n+ Buschenschank, Weinrouten, Therme als Widget + 30+ Sprachen + DSGVO\nDemo: gastinfo.eu\n\n#Steiermark #Weinregion #Therme #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "Steiermark-Gastgeber: Wein, Therme, Natur als Widget.\nDemo: gastinfo.eu\n\n#steiermark #weinlese #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
       },
-      "facebook": {
-        "caption": "4 Hebel für mehr 5-Sterne:\n01 Klare Anfahrt\n02 Self-Service Check-in\n03 Lokale Tipps\n04 Echtzeit-Updates\nDemo: gastinfo.eu\n\n#5Sterne #Bewertungen #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
-        "time": "13:00"
+      "Samstag": {
+        "instagram": {
+          "caption": "Checkliste: Was gehört in eine moderne Gästemappe?\n\nANKOMMEN\n- Anfahrt & Karte\n- Parkmöglichkeiten\n- Eingangs-Foto\n- Schlüsseltresor-Code\n- Check-in & Check-out Zeiten\n\nAUFENTHALT\n- WLAN-Passwort (kopierbar)\n- Hausregeln\n- Mülltrennung\n- Heizung/Klima-Bedienung\n\nEMPFEHLUNGEN\n- Restaurants & Cafés\n- Sehenswürdigkeiten\n- Lokale Events\n- Supermarkt & Apotheke\n\nNOTFALL\n- Notfallnummern\n- Nächstes Krankenhaus\n\nAlles in GASTiNFO – per QR-Code, in 30+ Sprachen.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #checkliste #propertymanagement #hospitalitytech #fewovermieter #pension #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "Checkliste: Was in jede moderne Gästemappe gehört.\nAnkommen, Aufenthalt, Empfehlungen, Notfall – per QR-Code in 30+ Sprachen.\nDemo: gastinfo.eu\n\n#Checkliste #Gästemappe #Ferienwohnung #Vermieter #DACH #MadeInAustria",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "Checkliste: Was in jede Gästemappe gehört.\nDemo: gastinfo.eu\n\n#checkliste #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
+          "time": "20:00"
+        }
       },
-      "tiktok": {
-        "caption": "4 Hebel für 5 Sterne. Demo: gastinfo.eu\n\n#5sterne #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-        "time": "20:00"
-      }
-    },
-    "Sonntag": {
-      "instagram": {
-        "caption": "Sommer 2026: was Gäste jetzt suchen.\n\n– Beste Bademöglichkeiten\n– Hitzeschutz-Tipps\n– Schattige Wanderwege\n– Sonnenschutz-Hinweise\n\nWas du als Gastgeber vorbereiten kannst:\n– Pool-Anleitung als Widget\n– Grill-Hinweise\n– Klimaanlage-Bedienung\n– Sommer-Events der Region\n\nEinmal angelegt – beliebig oft abrufbar. In 30+ Sprachen.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #airbnbtipps #vermieter #hotellerie #hoteltech #gastfreundschaft #gastgeber #qrcode #dsgvo #madeinaustria #sommer2026 #summer2026 #vacationrental #shorttermrental #strhost #propertymanagement #hospitalitytech #guestexperience #fewovermieter #pension #gästehaus #urlaubinösterreich #sommerurlaub #DACH #travel #smarthotel",
-        "time": "19:00"
-      },
-      "facebook": {
-        "caption": "Sommer 2026: bereite jetzt die digitale Gästemappe vor.\nPool, Grill, Klimaanlage, Events – einmal angelegt, beliebig oft abrufbar.\nDemo: gastinfo.eu\n\n#Sommer2026 #Ferienwohnung #Vermieter #Gästemappe #Hotellerie #DACH #MadeInAustria",
-        "time": "20:00"
-      },
-      "tiktok": {
-        "caption": "Sommer-Content jetzt anlegen. Beliebig oft abrufbar.\nDemo: gastinfo.eu\n\n#sommer2026 #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-        "time": "20:30"
+      "Sonntag": {
+        "instagram": {
+          "caption": "So läuft GASTiNFO im Alltag ab.\n\nDU – einmalig:\n– Konto anlegen\n– Unterkunft einrichten\n– Widgets befüllen\n– QR-Code ausdrucken\n\nDEIN GAST – bei jeder Ankunft:\n– QR-Code scannen\n– Alle Infos sofort verfügbar\n– In seiner Sprache\n– Auch offline\n\nDU – danach:\n– Keine Anrufe\n– Keine wiederholten Fragen\n– Mehr Zeit für das Wesentliche\n\nEinmal einrichten. Dauerhaft profitieren.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #hotellerie #hoteltech #gastgeber #workflow #zeitersparnis #propertymanagement #hospitalitytech #fewovermieter #pension #qrcode #dsgvo #madeinaustria #vacationrental #strhost #guestexperience #DACH #urlaub2026 #smarthotel",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Einmal einrichten – dauerhaft profitieren.\nGASTiNFO im Alltag: Du richtest ein, Gäste haben alles automatisch.\nDemo: gastinfo.eu\n\n#Workflow #Zeitersparnis #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Einmal einrichten, fuer immer profitieren.\nDemo: gastinfo.eu\n\n#workflow #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
+          "time": "20:30"
+        }
       }
     }
   },
-
   "seasonal": {
     "_comment": "Seasonal caption overrides. Script picks season by month. winter=Dez-Feb, frühling=Mär-Mai, sommer=Jun-Aug, herbst=Sep-Nov",
     "winter": {
@@ -189,7 +494,6 @@
       }
     }
   },
-
   "events": [
     {
       "name": "FIFA WM 2026",
@@ -212,8 +516,10 @@
     {
       "name": "Weihnachten",
       "recurring_annually": true,
-      "month_start": 12, "day_start": 22,
-      "month_end": 12, "day_end": 26,
+      "month_start": 12,
+      "day_start": 22,
+      "month_end": 12,
+      "day_end": 26,
       "priority": 9,
       "instagram": {
         "caption": "Weihnachten – die wichtigste Reisewoche des Jahres.\n\nWas Weihnachtsgäste brauchen:\n– Weihnachtsmärkte & Öffnungszeiten\n– Gottesdienste in der Nähe\n– Notdienste & Ärzte\n– Schlittschuhlaufen & Winterwandern\n\nAlles in der digitalen Gästemappe – automatisch in 30+ Sprachen.\n\nDemo offen für alle: gastinfo.eu\n\n#weihnachten #christmas #weihnachtsurlaub #ferienwohnung #digitalgästemappe #ferienwohnungvermieter #airbnbhost #vermieter #hoteltech #qrcode #dsgvo #madeinaustria #weihnachtsmarkt #österreich #DACH #travel",
@@ -231,8 +537,10 @@
     {
       "name": "Silvester",
       "recurring_annually": true,
-      "month_start": 12, "day_start": 29,
-      "month_end": 1,  "day_end": 2,
+      "month_start": 12,
+      "day_start": 29,
+      "month_end": 1,
+      "day_end": 2,
       "priority": 9,
       "instagram": {
         "caption": "Silvester: die Nacht, in der alle Fragen auf einmal kommen.\n\n– Feuerwerk-Spots in der Nähe?\n– Öffis nach Mitternacht?\n– Restaurants mit Silvester-Menü?\n– Taxi-Apps für die Nacht?\n\nAlles einmal in der digitalen Gästemappe anlegen. Gäste scannen den QR-Code – fertig.\n\nDemo offen für alle: gastinfo.eu\n\n#silvester #newyear #newyearseve #ferienwohnung #digitalgästemappe #ferienwohnungvermieter #airbnbhost #vermieter #hoteltech #qrcode #dsgvo #madeinaustria #österreich #DACH #travel",
@@ -269,8 +577,10 @@
     {
       "name": "Valentinstag",
       "recurring_annually": true,
-      "month_start": 2, "day_start": 12,
-      "month_end": 2,  "day_end": 15,
+      "month_start": 2,
+      "day_start": 12,
+      "month_end": 2,
+      "day_end": 15,
       "priority": 6,
       "instagram": {
         "caption": "Valentinstag-Reisen: Paare, Romantik, besondere Erwartungen.\n\nWas Valentins-Gäste suchen:\n– Romantische Restaurants mit Tischreservierung\n– Spa & Wellness-Angebote\n– Besondere Ausflüge zu zweit\n– Blumenlieferservice\n\nAlles einmal anlegen – in 30+ Sprachen abrufbar.\n\nDemo offen für alle: gastinfo.eu\n\n#valentinstag #valentinesday #romantik #paarurlaub #ferienwohnung #digitalgästemappe #ferienwohnungvermieter #airbnbhost #vermieter #hoteltech #qrcode #dsgvo #madeinaustria #österreich #DACH",
