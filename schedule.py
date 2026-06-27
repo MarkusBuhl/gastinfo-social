@@ -101,7 +101,7 @@ def select_post(d, library):
         return {
             "instagram": event.get("instagram"),
             "facebook":  event.get("facebook"),
-            "tiktok":    event.get("tiktok"),
+            "linkedin":  event.get("linkedin"),
         }
 
     # Map JSON season keys (frühling uses ascii key in JSON)
@@ -152,6 +152,8 @@ def create_buffer_post(channel_id, text, video, due_at, platform):
         metadata = {"instagram": {"type": "reel", "shouldShareToFeed": True}}
     elif platform == "facebook":
         metadata = {"facebook": {"type": "reel"}}
+    elif platform == "linkedin":
+        metadata = {}
     else:
         metadata = {}
 
@@ -296,4 +298,36 @@ def main():
     for offset in range(1, days_ahead + 1):
         post_date = today + timedelta(days=offset)
         day_name  = DAYS_DE[post_date.weekday()]
-    
+        week_key  = get_week_key(post_date)
+        post      = select_post(post_date, library)
+
+        print(f"\n{post_date} ({day_name}, {week_key}):")
+
+        for platform in ("instagram", "facebook", "linkedin"):
+            channel_id = channels[platform]
+            content    = post.get(platform)
+            if not content:
+                print(f"  {platform}: no content, skipping")
+                continue
+
+            date_str = post_date.isoformat()
+            if (channel_id, date_str) in existing_days:
+                print(f"  {platform}: already scheduled, skipping")
+                continue
+
+            caption  = content.get("caption", "")
+            time_str = content.get("time", "12:00")
+            due_at   = due_at_iso(post_date, time_str)
+            vid      = video_url(day_name, week_key)
+
+            try:
+                result = create_buffer_post(channel_id, caption, vid, due_at, platform)
+                print(f"  {platform}: scheduled for {due_at} ✓")
+                scheduled_count += 1
+            except Exception as ex:
+                print(f"  {platform}: ERROR – {ex}", file=sys.stderr)
+
+    print(f"\nDone. {scheduled_count} new post(s) scheduled.")
+
+if __name__ == "__main__":
+    main()
