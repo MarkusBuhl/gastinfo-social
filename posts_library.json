@@ -3,7 +3,7 @@
   "channels": {
     "instagram": "6a2119f3c687a22dd45bb075",
     "facebook": "6a211a37c687a22dd45bb13e",
-    "tiktok": "6a211a62c687a22dd45bb1c0"
+    "linkedin": "6a3f95315ab6d2f10679cdb9"
   },
   "week_rotation": [
     "week_a",
@@ -22,9 +22,9 @@
           "caption": "18 Widgets out of the box: Anreise, Aufenthalt, Service, Premium-Extras.\nEin QR-Code, kein Onboarding für den Gast.\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gästemappe #Hotellerie #Airbnb #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "18 Widgets. 1 QR-Code. Demo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "18 Widgets. 1 QR-Code. Demo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Dienstag": {
@@ -36,9 +36,9 @@
           "caption": "4h gespart pro Woche x 4 Wochen x 50 EUR/h = 800 EUR/Monat.\nInvestition: 9,99 EUR.\nDemo: gastinfo.eu\n\n#ROI #Vermieter #Ferienwohnung #Gästemappe #Hotellerie #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "800 EUR sparen fuer 9,99 EUR. Mathe ist klar.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #roi",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "800 EUR sparen fuer 9,99 EUR. Mathe ist klar.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Mittwoch": {
@@ -50,9 +50,9 @@
           "caption": "4 Schritte: Registrieren, Unterkunft anlegen, Widgets wählen, QR-Code teilen.\nDemo: gastinfo.eu\n\n#Vermieter #Ferienwohnung #Onboarding #Gästemappe #Hotellerie #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "5 Minuten zur eigenen digitalen Gästemappe.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #setup",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "5 Minuten zur eigenen digitalen Gästemappe.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Donnerstag": {
@@ -64,9 +64,9 @@
           "caption": "30+ Sprachen automatisch. DeepL übersetzt alles im Hintergrund.\nInternationale Gäste lesen Hausregeln in ihrer Muttersprache.\nDemo: gastinfo.eu\n\n#Mehrsprachig #DeepL #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "30+ Sprachen. Ein QR-Code. Null Aufwand.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe #international",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "30+ Sprachen. Ein QR-Code. Null Aufwand.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Freitag": {
@@ -78,9 +78,9 @@
           "caption": "Für Gastgeber in Vorarlberg: Berghotels, Chalets, Almhütten.\n+ 30+ Sprachen + Offline + DSGVO, Made in Austria\nDemo: gastinfo.eu\n\n#Vorarlberg #Ferienwohnung #Vermieter #Berghotel #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Vorarlberg-Gastgeber: kein Empfang, kein Problem.\nDemo: gastinfo.eu\n\n#vorarlberg #austria #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Vorarlberg-Gastgeber: kein Empfang, kein Problem.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Samstag": {
@@ -92,9 +92,9 @@
           "caption": "4 Hebel fuer mehr 5-Sterne: Anfahrt, Self-Check-in, Lokale Tipps, Echtzeit-Updates.\nDemo: gastinfo.eu\n\n#5Sterne #Bewertungen #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "4 Hebel fuer 5 Sterne. Demo: gastinfo.eu\n\n#5sterne #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "4 Hebel fuer 5 Sterne. Demo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Sonntag": {
@@ -106,9 +106,9 @@
           "caption": "Sommer-Content für deine Gästemappe: Pool, Grill, Badeseen, Events.\nEinmal anlegen – automatisch übersetzt.\nDemo: gastinfo.eu\n\n#Sommer2026 #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Sommer-Gäste automatisch informiert. Demo: gastinfo.eu\n\n#sommer2026 #airbnbhost #ferienwohnung #vermieterleben #fyp #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Sommer-Gäste automatisch informiert. Demo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     },
@@ -122,9 +122,9 @@
           "caption": "WLAN? Parken? Check-in? – zum 50. Mal heute.\nGASTiNFO beantwortet alles automatisch per QR-Code.\nDemo: gastinfo.eu\n\n#Zeitersparnis #Vermieter #Ferienwohnung #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Gaeste-Fragen zum 50. Mal? Nie wieder.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Gaeste-Fragen zum 50. Mal? Nie wieder.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Dienstag": {
@@ -136,9 +136,9 @@
           "caption": "Vergilbte Papiermappe, veraltete Infos – Gäste merken das.\nGASTiNFO: Echtzeit-Updates, kein Drucken, immer aktuell.\nDemo: gastinfo.eu\n\n#Papierlos #Digital #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Papiermappe von 2022? Zeit fuer ein Upgrade.\nDemo: gastinfo.eu\n\n#airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe #paperless",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Papiermappe von 2022? Zeit fuer ein Upgrade.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Mittwoch": {
@@ -150,9 +150,9 @@
           "caption": "Kein Empfang am Berg – trotzdem alles abrufbar.\nGASTiNFO ist offline-fähig: einmal geladen, immer verfügbar.\nDemo: gastinfo.eu\n\n#Berghotel #Alpen #Offline #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Kein Netz am Berg? Kein Problem.\nDemo: gastinfo.eu\n\n#berghotel #alpen #airbnbhost #vermieterleben #fyp #hoteltech #digitalgästemappe #offline",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Kein Netz am Berg? Kein Problem.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Donnerstag": {
@@ -164,9 +164,9 @@
           "caption": "Hausregeln auf Deutsch – niederländischer Gast versteht nichts – schlechte Bewertung.\nGASTiNFO: 30+ Sprachen automatisch.\nDemo: gastinfo.eu\n\n#Mehrsprachig #DeepL #Bewertungen #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Hausregeln nicht gelesen? Sprache war das Problem.\nDemo: gastinfo.eu\n\n#mehrsprachig #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Hausregeln nicht gelesen? Sprache war das Problem.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Freitag": {
@@ -178,9 +178,9 @@
           "caption": "Für Gastgeber in Tirol: Chalets, Almhütten, Pensionen.\n+ Skipass, Pisten, Après-Ski als Widget\n+ 30+ Sprachen + Offline + DSGVO\nDemo: gastinfo.eu\n\n#Tirol #Berghotel #Skiurlaub #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Tirol-Gastgeber: internationale Gäste, null Sprachbarriere.\nDemo: gastinfo.eu\n\n#tirol #skiurlaub #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Tirol-Gastgeber: internationale Gäste, null Sprachbarriere.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Samstag": {
@@ -192,9 +192,9 @@
           "caption": "Mitternachts-Check-in ohne Stress:\nSchlüsseltresor-Code, Anreiseanleitung, Fotos – per QR-Code.\nDemo: gastinfo.eu\n\n#CheckIn #Selfservice #Ferienwohnung #Vermieter #Airbnb #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Mitternachts-Ankunft – ohne Anruf.\nDemo: gastinfo.eu\n\n#checkin #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Mitternachts-Ankunft – ohne Anruf.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Sonntag": {
@@ -206,9 +206,9 @@
           "caption": "Schlechte Bewertungen kommen oft von fehlender Information, nicht schlechten Apartments.\nGASTiNFO löst genau das.\nDemo: gastinfo.eu\n\n#Bewertungen #Guestexperience #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Schlechte Bewertung wegen fehlender Info? Nie wieder.\nDemo: gastinfo.eu\n\n#bewertungen #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Schlechte Bewertung wegen fehlender Info? Nie wieder.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     },
@@ -222,9 +222,9 @@
           "caption": "Digitale Gästemappe: Basic 0 EUR, Standard 9,99 EUR, Premium 29,90 EUR/Monat.\nKostenlos starten, keine Kreditkarte.\nDemo: gastinfo.eu\n\n#Pricing #Kostenlos #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Digitale Gästemappe ab 0 EUR. Kein Witz.\nDemo: gastinfo.eu\n\n#kostenlos #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Digitale Gästemappe ab 0 EUR. Kein Witz.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Dienstag": {
@@ -236,9 +236,9 @@
           "caption": "Gäste App installieren? Nein.\nQR-Code scannen, Browser öffnet sich, fertig. Kein Store, kein Account.\nDemo: gastinfo.eu\n\n#NoApp #QRCode #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Keine App noetig. QR-Code – fertig.\nDemo: gastinfo.eu\n\n#noapp #qrcode #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Keine App noetig. QR-Code – fertig.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Mittwoch": {
@@ -250,9 +250,9 @@
           "caption": "Einrichtung in unter 5 Minuten – gemessen.\n30s Registrieren, 1min Unterkunft, 2min Widgets, 30s QR-Code.\nDemo: gastinfo.eu\n\n#Setup #5Minuten #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Einrichtung in 5 Minuten – ich hab's gezählt.\nDemo: gastinfo.eu\n\n#setup #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Einrichtung in 5 Minuten – ich hab's gezählt.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Donnerstag": {
@@ -264,9 +264,9 @@
           "caption": "DSGVO-konform: EU-Datenhaltung, keine Gästedaten, Made in Austria.\nFür DACH-Vermieter ist das Pflicht, kein Bonus.\nDemo: gastinfo.eu\n\n#DSGVO #Datenschutz #MadeInAustria #Ferienwohnung #Vermieter #DACH",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "DSGVO-konform, Made in Austria. Kein Risiko.\nDemo: gastinfo.eu\n\n#dsgvo #madeinaustria #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "DSGVO-konform, Made in Austria. Kein Risiko.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Freitag": {
@@ -278,9 +278,9 @@
           "caption": "Für Gastgeber in Salzburg: Stadthotels, Landgasthöfe, Ferienwohnungen.\n+ Festspiele, Altstadt als Widget + 30+ Sprachen + DSGVO\nDemo: gastinfo.eu\n\n#Salzburg #Festspiele #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Salzburg-Gastgeber: Festspiele, Altstadt, Seen als Widget.\nDemo: gastinfo.eu\n\n#salzburg #austria #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Salzburg-Gastgeber: Festspiele, Altstadt, Seen als Widget.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Samstag": {
@@ -292,9 +292,9 @@
           "caption": "Infos in Echtzeit ändern – Gäste sehen es sofort beim nächsten Scan.\nKein Drucken, kein Tauschen.\nDemo: gastinfo.eu\n\n#Echtzeit #Updates #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "WLAN-Passwort geaendert? Gast sieht's sofort.\nDemo: gastinfo.eu\n\n#echtzeit #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "WLAN-Passwort geaendert? Gast sieht's sofort.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Sonntag": {
@@ -306,9 +306,9 @@
           "caption": "So sieht deine Gästemappe für Gäste aus: Ankunft, Aufenthalt, Empfehlungen, Notfall – in ihrer Sprache.\nDemo: gastinfo.eu\n\n#GuestView #Guestexperience #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "So sehen Gäste deine Mappe – in ihrer Sprache.\nDemo: gastinfo.eu\n\n#guestview #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "So sehen Gäste deine Mappe – in ihrer Sprache.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     },
@@ -322,9 +322,9 @@
           "caption": "Top-Gastgeber beantworten Fragen, bevor sie gestellt werden.\nGASTiNFO ist das Werkzeug dafür.\nDemo: gastinfo.eu\n\n#TopGastgeber #Proaktiv #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Top-Gastgeber vs. Durchschnitt – der Unterschied.\nDemo: gastinfo.eu\n\n#topgastgeber #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Top-Gastgeber vs. Durchschnitt – der Unterschied.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Dienstag": {
@@ -336,9 +336,9 @@
           "caption": "Papier vs. Digital:\nPapier: veraltet, eine Sprache, kein Update.\nGASTiNFO: immer aktuell, 30+ Sprachen, Echtzeit.\nDemo: gastinfo.eu\n\n#PapiervsDigital #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Papier vs. Digital – kein fairer Vergleich.\nDemo: gastinfo.eu\n\n#papervsdigital #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Papier vs. Digital – kein fairer Vergleich.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Mittwoch": {
@@ -350,9 +350,9 @@
           "caption": "Die 3 ersten Gäste-Fragen: WLAN, Parken, Check-in.\nAlle drei per QR-Code mit GASTiNFO.\nDemo: gastinfo.eu\n\n#WLAN #CheckIn #Parken #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "WLAN, Parken, Check-in – die Top-3 Gaestefragen.\nDemo: gastinfo.eu\n\n#wlan #checkin #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "WLAN, Parken, Check-in – die Top-3 Gaestefragen.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Donnerstag": {
@@ -364,9 +364,9 @@
           "caption": "GASTiNFO Premium: Branding, PDFs, Bewertungs-Widget, Custom Widget, eigene Domain.\nFür professionelle Vermieter und Hotels.\nDemo: gastinfo.eu\n\n#Premium #Branding #Hotellerie #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Premium-Features fuer professionelle Gastgeber.\nDemo: gastinfo.eu\n\n#premium #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Premium-Features fuer professionelle Gastgeber.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Freitag": {
@@ -378,9 +378,9 @@
           "caption": "Für Gastgeber in der Steiermark: Weinregionen, Thermalbäder, Naturparks.\n+ Buschenschank, Weinrouten, Therme als Widget + 30+ Sprachen + DSGVO\nDemo: gastinfo.eu\n\n#Steiermark #Weinregion #Therme #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Steiermark-Gastgeber: Wein, Therme, Natur als Widget.\nDemo: gastinfo.eu\n\n#steiermark #weinlese #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Steiermark-Gastgeber: Wein, Therme, Natur als Widget.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Samstag": {
@@ -392,9 +392,9 @@
           "caption": "Checkliste: Was in jede moderne Gästemappe gehört.\nAnkommen, Aufenthalt, Empfehlungen, Notfall – per QR-Code in 30+ Sprachen.\nDemo: gastinfo.eu\n\n#Checkliste #Gästemappe #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Checkliste: Was in jede Gästemappe gehört.\nDemo: gastinfo.eu\n\n#checkliste #airbnbhost #ferienwohnung #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Checkliste: Was in jede Gästemappe gehört.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Sonntag": {
@@ -406,9 +406,9 @@
           "caption": "Einmal einrichten – dauerhaft profitieren.\nGASTiNFO im Alltag: Du richtest ein, Gäste haben alles automatisch.\nDemo: gastinfo.eu\n\n#Workflow #Zeitersparnis #Ferienwohnung #Vermieter #Gästemappe #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Einmal einrichten, fuer immer profitieren.\nDemo: gastinfo.eu\n\n#workflow #airbnbhost #ferienwohnung #vermieterleben #fyp #hoteltech #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Einmal einrichten, fuer immer profitieren.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     }
@@ -425,9 +425,9 @@
           "caption": "Für Ski-Gastgeber: Chalets, Almhütten, Pensionen in der Bergregion.\n✓ 30+ Sprachen (DeepL)\n✓ Offline-fähig – kein Empfang, kein Problem\n✓ DSGVO · Made in Austria\nDemo: gastinfo.eu\n\n#Skiurlaub #Wintertourismus #Alpen #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Ski-Gastgeber: kein Empfang, kein Problem.\nDemo: gastinfo.eu\n\n#skiurlaub #austria #airbnbhost #vermieterleben #hoteltech #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Ski-Gastgeber: kein Empfang, kein Problem.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       },
       "Sonntag": {
@@ -439,9 +439,9 @@
           "caption": "Winter-Content für deine Gästemappe:\nSchneeketten, Skipässe, Après-Ski, Notfallnummern.\nEinmal anlegen – automatisch übersetzt.\nDemo: gastinfo.eu\n\n#Skiurlaub #Wintertourismus #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Winter-Content einmal anlegen, ewig abrufbar.\nDemo: gastinfo.eu\n\n#skiurlaub #wintertourismus #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Winter-Content einmal anlegen, ewig abrufbar.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     },
@@ -455,9 +455,9 @@
           "caption": "Für Sommer-Gastgeber: Ferienwohnungen an Seen, in den Bergen, auf dem Land.\n✓ 30+ Sprachen (DeepL)\n✓ Pool, Grill, Badeseen als Widget\n✓ DSGVO · Made in Austria\nDemo: gastinfo.eu\n\n#Sommerurlaub #Sommer2026 #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "13:00"
         },
-        "tiktok": {
-          "caption": "Sommer-Gastgeber: alle Fragen automatisch beantwortet.\nDemo: gastinfo.eu\n\n#sommerurlaub #sommer2026 #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-          "time": "20:00"
+        "linkedin": {
+          "caption": "Sommer-Gastgeber: alle Fragen automatisch beantwortet.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     },
@@ -471,9 +471,9 @@
           "caption": "Frühlings-Content für deine Gästemappe:\nWanderwege, Radtouren, lokale Events.\nEinmal anlegen – automatisch übersetzt.\nDemo: gastinfo.eu\n\n#Frühling #Wandern #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Frühling: Gäste-Fragen vorwegnehmen.\nDemo: gastinfo.eu\n\n#frühling #wandern #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Frühling: Gäste-Fragen vorwegnehmen.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     },
@@ -487,9 +487,9 @@
           "caption": "Herbst-Content für deine Gästemappe:\nWeinlese, Wanderwege, Pilze, Kultur.\nEinmal anlegen – automatisch übersetzt.\nDemo: gastinfo.eu\n\n#Herbst #Weinlese #Ferienwohnung #Vermieter #DACH #MadeInAustria",
           "time": "20:00"
         },
-        "tiktok": {
-          "caption": "Herbst: die unterschätzte Reisezeit optimal vorbereiten.\nDemo: gastinfo.eu\n\n#herbst #weinlese #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-          "time": "20:30"
+        "linkedin": {
+          "caption": "Herbst: die unterschätzte Reisezeit optimal vorbereiten.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+          "time": "09:00"
         }
       }
     }
@@ -508,9 +508,9 @@
         "caption": "WM 2026: internationale Gäste aus aller Welt brauchen Infos in ihrer Sprache.\nGASTiNFO.EU übersetzt automatisch in 30+ Sprachen.\nDemo: gastinfo.eu\n\n#WM2026 #WorldCup2026 #Ferienwohnung #Vermieter #Hotellerie #DACH #MadeInAustria",
         "time": "20:00"
       },
-      "tiktok": {
-        "caption": "WM 2026: Gäste aus 30+ Ländern – 1 QR-Code für alle.\nDemo: gastinfo.eu\n\n#wm2026 #worldcup2026 #airbnbhost #ferienwohnung #fyp #digitalgästemappe #international",
-        "time": "20:30"
+      "linkedin": {
+        "caption": "WM 2026: Gäste aus 30+ Ländern – 1 QR-Code für alle.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+        "time": "09:00"
       }
     },
     {
@@ -529,9 +529,9 @@
         "caption": "Weihnachts-Content für deine Gästemappe:\nMärkte, Gottesdienste, Notdienste, Winteraktivitäten.\nEinmal anlegen – in 30+ Sprachen.\nDemo: gastinfo.eu\n\n#Weihnachten #Christmas #Ferienwohnung #Vermieter #DACH #MadeInAustria",
         "time": "20:00"
       },
-      "tiktok": {
-        "caption": "Weihnachtsgäste optimal vorbereiten.\nDemo: gastinfo.eu\n\n#weihnachten #christmas #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-        "time": "20:30"
+      "linkedin": {
+        "caption": "Weihnachtsgäste optimal vorbereiten.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+        "time": "09:00"
       }
     },
     {
@@ -550,9 +550,9 @@
         "caption": "Silvester-Content für deine Gästemappe:\nFeuerwerk-Spots, Öffis, Restaurants, Taxis.\nEinmal anlegen, alle Fragen beantwortet.\nDemo: gastinfo.eu\n\n#Silvester #NewYear #Ferienwohnung #Vermieter #DACH #MadeInAustria",
         "time": "20:00"
       },
-      "tiktok": {
-        "caption": "Silvester: alle Fragen schon beantwortet. Demo: gastinfo.eu\n\n#silvester #newyear #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-        "time": "20:30"
+      "linkedin": {
+        "caption": "Silvester: alle Fragen schon beantwortet. Demo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+        "time": "09:00"
       }
     },
     {
@@ -569,9 +569,9 @@
         "caption": "Oster-Content für deine Gästemappe:\nMärkte, Kinderausflüge, Feiertags-Öffnungszeiten.\nEinmal anlegen – automatisch übersetzt.\nDemo: gastinfo.eu\n\n#Ostern #Osterurlaub #Easter #Ferienwohnung #Vermieter #DACH #MadeInAustria",
         "time": "20:00"
       },
-      "tiktok": {
-        "caption": "Ostergäste optimal vorbereiten.\nDemo: gastinfo.eu\n\n#ostern #osterurlaub #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-        "time": "20:30"
+      "linkedin": {
+        "caption": "Ostergäste optimal vorbereiten.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+        "time": "09:00"
       }
     },
     {
@@ -590,10 +590,10 @@
         "caption": "Valentinstag-Content für deine Gästemappe:\nRomantische Restaurants, Spa, Ausflüge für Paare.\nDemo: gastinfo.eu\n\n#Valentinstag #Romantik #Paarurlaub #Ferienwohnung #Vermieter #DACH #MadeInAustria",
         "time": "20:00"
       },
-      "tiktok": {
-        "caption": "Valentinstag: Paar-Gäste begeistern.\nDemo: gastinfo.eu\n\n#valentinstag #romantik #airbnbhost #ferienwohnung #fyp #digitalgästemappe",
-        "time": "20:30"
+      "linkedin": {
+        "caption": "Valentinstag: Paar-Gäste begeistern.\nDemo: gastinfo.eu\n\nDemo: gastinfo.eu\n\n#Vermieter #Hotellerie #Ferienwohnung #PropTech #DACH #MadeInAustria #HospitalityTech #Digitalisierung",
+        "time": "09:00"
       }
     }
   ]
-}
+      }
