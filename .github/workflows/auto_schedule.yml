@@ -1,0 +1,31 @@
+name: Auto Schedule Posts
+
+on:
+  schedule:
+    # Every 3 days at 18:00 UTC = 20:00 Vienna (CEST)
+    # Runs on days 1, 4, 7, 10, 13, 16, 19, 22, 25, 28 of each month
+    - cron: '0 18 1,4,7,10,13,16,19,22,25,28 * *'
+  workflow_dispatch:
+    # Manual trigger: go to Actions tab → Run workflow
+
+jobs:
+  schedule-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run scheduler
+        run: python schedule.py
+        env:
+          BUFFER_TOKEN:  ${{ secrets.BUFFER_TOKEN }}
+          GITHUB_REPO:   ${{ github.repository }}
+          GITHUB_BRANCH: ${{ github.ref_name }}
