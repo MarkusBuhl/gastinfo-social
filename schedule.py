@@ -101,7 +101,7 @@ def select_post(d, library):
         return {
             "instagram": event.get("instagram"),
             "facebook":  event.get("facebook"),
-            "linkedin":  event.get("linkedin"),
+            "tiktok":    event.get("tiktok"),
         }
 
     # Map JSON season keys (frühling uses ascii key in JSON)
@@ -123,19 +123,32 @@ def select_post(d, library):
     return library["weekdays"][day_name]
 
 # ── Video URL ─────────────────────────────────────────────────────────────────
-def video_url(day_name, week_key="week_a"):
+# Musik ist pro Plattform getrennt lizenziert:
+#   _music   -> Meta Sound Collection, nur Facebook + Instagram
+#   _tiktok  -> TikTok Commercial Music Library, nur TikTok
+# Ohne Suffix bleibt die stumme Fassung als Fallback fuer alles andere.
+VIDEO_STEM_BY_PLATFORM = {
+    "instagram": "slideshow_reel_music",
+    "facebook":  "slideshow_reel_music",
+    "tiktok":    "slideshow_reel_tiktok",
+}
+DEFAULT_VIDEO_STEM = "slideshow_reel"
+
+def video_url(day_name, week_key="week_a", platform=None):
     """Return GitHub raw URL for the reel video.
-    week_a uses the legacy path (posts/{day}/slideshow_reel.mp4).
-    week_b/c/d use posts/{week_key}/{day}/slideshow_reel.mp4.
+    week_a uses the legacy path (posts/{day}/...).
+    week_b/c/d use posts/{week_key}/{day}/...
+    Die Tonspur richtet sich nach der Plattform-Lizenz.
     """
+    stem = VIDEO_STEM_BY_PLATFORM.get(platform, DEFAULT_VIDEO_STEM)
     if week_key == "week_a":
         return (
             f"https://raw.githubusercontent.com/{GITHUB_REPO}/"
-            f"{GITHUB_BRANCH}/posts/{day_name}/slideshow_reel.mp4"
+            f"{GITHUB_BRANCH}/posts/{day_name}/{stem}.mp4"
         )
     return (
         f"https://raw.githubusercontent.com/{GITHUB_REPO}/"
-        f"{GITHUB_BRANCH}/posts/{week_key}/{day_name}/slideshow_reel.mp4"
+        f"{GITHUB_BRANCH}/posts/{week_key}/{day_name}/{stem}.mp4"
     )
 
 # ── Buffer API via MCP server ─────────────────────────────────────────────────
@@ -152,7 +165,7 @@ def create_buffer_post(channel_id, text, video, due_at, platform):
         metadata = {"instagram": {"type": "reel", "shouldShareToFeed": True}}
     elif platform == "facebook":
         metadata = {"facebook": {"type": "reel"}}
-    elif platform == "linkedin":
+    elif platform == "tiktok":
         metadata = {}
     else:
         metadata = {}
@@ -303,7 +316,7 @@ def main():
 
         print(f"\n{post_date} ({day_name}, {week_key}):")
 
-        for platform in ("instagram", "facebook", "linkedin"):
+        for platform in ("instagram", "facebook", "tiktok"):
             channel_id = channels[platform]
             content    = post.get(platform)
             if not content:
@@ -318,7 +331,7 @@ def main():
             caption  = content.get("caption", "")
             time_str = content.get("time", "12:00")
             due_at   = due_at_iso(post_date, time_str)
-            vid      = video_url(day_name, week_key)
+            vid      = video_url(day_name, week_key, platform)
 
             try:
                 result = create_buffer_post(channel_id, caption, vid, due_at, platform)

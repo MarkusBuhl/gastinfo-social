@@ -51,8 +51,11 @@ git push -u origin main
 2. **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
 4. Name: `BUFFER_TOKEN`
-5. Value: `f7pmsDttnjCJiXL6exfRXIZzLBsa9i-TUF5sBHoHk8l`
+5. Value: your personal Buffer API token from https://publish.buffer.com/settings/api
 6. Click **Add secret**
+
+> **Never commit the token to this file.** The repository is public, so anything
+> written here is world-readable. The token belongs only in GitHub Secrets.
 
 ### 5. Test Run
 
