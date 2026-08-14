@@ -30,7 +30,7 @@ posts/
 ```
 
 Source files are at:
-`C:\Users\PC\Documents\Developement\Projekte\GASTiNFO\SocilMediaAssets\posts\[Tag]\slideshow_reel.mp4`
+`C:\Users\PC\Documents\Developement\Projekte\GASTiNFO\SocialMediaAssets\posts\[Tag]\slideshow_reel.mp4`
 
 ### 3. Push to GitHub
 
