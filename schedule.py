@@ -3,8 +3,10 @@
 GASTiNFO.EU - Auto Social Media Scheduler
 Runs every 3 days via GitHub Actions.
 Schedules next 3 days of posts to Buffer.
-4-week content rotation: week_a (Features), week_b (Pain Points),
-week_c (FAQ), week_d (Benefits). ISO week % 4 selects the week.
+6-week content rotation: week_a (Features), week_b (Pain Points),
+week_c (FAQ), week_d (Benefits), week_e (Szenen), week_f (Design/Look).
+ISO week % 6 selects the week; week_e/week_f have Mon-Fri only and fall back
+to the 4-week base rotation on weekends.
 Automatically selects seasonal content and event-specific posts.
 """
 
@@ -82,13 +84,39 @@ def get_active_event(d, events):
         return None
     return max(active, key=lambda e: e.get("priority", 0))
 
-# ── Week rotation (ISO week % 4) ─────────────────────────────────────────────
-WEEK_KEYS = ["week_a", "week_b", "week_c", "week_d"]
+# ── Week rotation (ISO-Woche % Anzahl Wochen) ────────────────────────────────
+# Reihenfolge steht in posts_library.json unter "week_rotation"; die Liste hier
+# ist nur der Fallback, falls der Schluessel fehlt.
+WEEK_KEYS = ["week_a", "week_b", "week_c", "week_d", "week_e", "week_f"]
 
-def get_week_key(d):
-    """Return week_a/b/c/d based on ISO week number."""
-    iso_week = d.isocalendar()[1]  # 1-53
-    return WEEK_KEYS[iso_week % 4]
+# week_e und week_f haben nur Montag-Freitag. An Samstag/Sonntag wird auf diese
+# Basisrotation zurueckgefallen, damit das Wochenende nicht leer bleibt.
+BASE_WEEK_KEYS = ["week_a", "week_b", "week_c", "week_d"]
+
+def rotation_keys(library=None):
+    keys = (library or {}).get("week_rotation") or WEEK_KEYS
+    return [k for k in keys if k]
+
+def get_week_key(d, library=None):
+    """Woche der Rotation fuer dieses Datum (ISO-Woche % Anzahl)."""
+    keys = rotation_keys(library)
+    return keys[d.isocalendar()[1] % len(keys)]
+
+def get_base_week_key(d):
+    """Fallback-Woche fuer Tage, die in der Rotationswoche fehlen."""
+    return BASE_WEEK_KEYS[d.isocalendar()[1] % len(BASE_WEEK_KEYS)]
+
+def resolve_week_key(d, day_name, library):
+    """Rotationswoche, die diesen Wochentag wirklich kennt.
+
+    week_e/week_f haben nur Montag-Freitag. Faellt der Tag dort weg, liefert
+    diese Funktion die Basiswoche - so passt auch die Video-URL zum Tag.
+    """
+    weeks = library.get("weeks", {})
+    key = get_week_key(d, library)
+    if day_name in weeks.get(key, {}):
+        return key
+    return get_base_week_key(d)
 
 # ── Post selection ────────────────────────────────────────────────────────────
 def select_post(d, library):
@@ -102,25 +130,30 @@ def select_post(d, library):
             "instagram": event.get("instagram"),
             "facebook":  event.get("facebook"),
             "tiktok":    event.get("tiktok"),
-        }
+        }, resolve_week_key(d, day_name, library)
 
     # Map JSON season keys (frühling uses ascii key in JSON)
     season_key = "frühling" if season == "fruehling" else season
     seasonal = library.get("seasonal", {}).get(season_key, {}).get(day_name)
     if seasonal:
         print(f"  -> Seasonal ({season_key}) override")
-        return seasonal
+        return seasonal, resolve_week_key(d, day_name, library)
 
-    # 4-week rotation
-    week_key = get_week_key(d)
+    # Wochenrotation
     weeks = library.get("weeks", {})
-    if weeks and week_key in weeks:
+    rotation_key = get_week_key(d, library)
+    week_key = resolve_week_key(d, day_name, library)
+    if week_key != rotation_key:
+        print(f"  -> {rotation_key} hat keinen {day_name}, Fallback auf {week_key}")
+    post = weeks.get(week_key, {}).get(day_name)
+
+    if post is not None:
         print(f"  -> Week rotation: {week_key}")
-        return weeks[week_key][day_name]
+        return post, week_key
 
     # Fallback: legacy weekdays key
     print(f"  -> Default weekday post (fallback)")
-    return library["weekdays"][day_name]
+    return library["weekdays"][day_name], "week_a"
 
 # ── Video URL ─────────────────────────────────────────────────────────────────
 # Musik ist pro Plattform getrennt lizenziert:
@@ -137,7 +170,7 @@ DEFAULT_VIDEO_STEM = "slideshow_reel"
 def video_url(day_name, week_key="week_a", platform=None):
     """Return GitHub raw URL for the reel video.
     week_a uses the legacy path (posts/{day}/...).
-    week_b/c/d use posts/{week_key}/{day}/...
+    week_b..week_f use posts/{week_key}/{day}/...
     Die Tonspur richtet sich nach der Plattform-Lizenz.
     """
     stem = VIDEO_STEM_BY_PLATFORM.get(platform, DEFAULT_VIDEO_STEM)
@@ -311,8 +344,7 @@ def main():
     for offset in range(1, days_ahead + 1):
         post_date = today + timedelta(days=offset)
         day_name  = DAYS_DE[post_date.weekday()]
-        week_key  = get_week_key(post_date)
-        post      = select_post(post_date, library)
+        post, week_key = select_post(post_date, library)
 
         print(f"\n{post_date} ({day_name}, {week_key}):")
 

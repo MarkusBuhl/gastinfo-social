@@ -1,5 +1,5 @@
 {
-  "_comment": "GASTiNFO.EU – Post Library. 4-week rotation. ISO week % 4: 0=week_a (Features), 1=week_b (Pain Points), 2=week_c (FAQ), 3=week_d (Benefits).",
+  "_comment": "GASTiNFO.EU - Post Library. 6-week rotation. ISO-Woche % 6 waehlt die Woche: 0=week_a (Features), 1=week_b (Pain Points), 2=week_c (FAQ), 3=week_d (Benefits), 4=week_e (Szenen), 5=week_f (Design/Look). week_e und week_f haben nur Montag-Freitag; an Samstag/Sonntag faellt schedule.py automatisch auf die 4-Wochen-Basisrotation zurueck.",
   "channels": {
     "instagram": "6a2119f3c687a22dd45bb075",
     "facebook": "6a211a37c687a22dd45bb13e",
@@ -9,7 +9,9 @@
     "week_a",
     "week_b",
     "week_c",
-    "week_d"
+    "week_d",
+    "week_e",
+    "week_f"
   ],
   "weeks": {
     "week_a": {
@@ -408,6 +410,78 @@
         },
         "tiktok": {
           "caption": "Einmal einrichten. Danach läuft es von allein.\n\ngastinfo.eu\n\n#ferienwohnung #gastgeber #airbnbhost #fewo",
+          "time": "18:00"
+        }
+      }
+    },
+    "week_e": {
+      "Montag": {
+        "instagram": {
+          "caption": "22:47 Uhr, mitten im Abendessen. „Wie war nochmal das WLAN-Passwort?\"\n\nDas Passwort hängt zwei Meter neben ihm am Router. Er hat es nicht gesehen, weil niemand einen Zettel sucht, wenn er im Bett liegt und das Handy in der Hand hat.\n\nDrei Nachrichten in einer Woche, immer dieselbe Frage, immer nach 21 Uhr. Nicht weil die Gäste bequem sind – sondern weil die Antwort am falschen Ort liegt.\n\nSchreib mir die Uhrzeit deiner spätesten Gästenachricht.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #gastgeber #fewovermieter #pension #gästehaus #campingplatz #vacationrental #strhost #guestexperience #dsgvo #madeinaustria #DACH #urlaub2026 #qrcode",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "22:47 Uhr, mitten im Abendessen: „Wie war nochmal das WLAN-Passwort?\"\nDas Passwort hängt zwei Meter neben ihm am Router. Gesucht hat er trotzdem auf dem Handy.\nWann kommt bei dir die späteste Gästenachricht?\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gastgeber #Campingplatz #Gästemappe #DACH",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "22:47 Uhr. „Wie war nochmal das WLAN-Passwort?\"\nDas Passwort hängt zwei Meter neben ihm.\n\n#ferienwohnung #gastgeber #vermieter",
+          "time": "18:00"
+        }
+      },
+      "Dienstag": {
+        "instagram": {
+          "caption": "Sonntag, 8:10 Uhr: „Wann müssen wir eigentlich raus?\"\n\nDie Antwort stand in der Buchungsbestätigung. Vor sechs Wochen.\n\nDrei Sätze, die diese Frage beenden – zum Kopieren:\n1. „Alles zu Anfahrt, Schlüssel und Check-out findest du hier.\"\n2. „Check-out bis 10 Uhr. Schlüssel zurück in den Tresor, Code bleibt gleich.\"\n3. „Morgen bis 10 Uhr. Handtücher ins Bad, Fenster zu. Mehr braucht es nicht.\"\n\nWelchen Satz tippst du am häufigsten ab?\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #gastgeber #fewovermieter #pension #gästehaus #campingplatz #vacationrental #strhost #guestexperience #dsgvo #madeinaustria #DACH #urlaub2026 #qrcode",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "Sonntag, 8:10 Uhr: „Wann müssen wir eigentlich raus?\"\nDrei Sätze zum Kopieren, die diese Frage beenden – vor der Anreise, beim Einchecken, am Vorabend.\nWelchen Satz tippst du am häufigsten ab?\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gastgeber #Campingplatz #Gästemappe #DACH",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "Sonntag, 8:10 Uhr: „Wann müssen wir eigentlich raus?\"\nDrei Sätze, die diese Frage beenden.\n\n#ferienwohnung #gastgeber #vermieter",
+          "time": "18:00"
+        }
+      },
+      "Mittwoch": {
+        "instagram": {
+          "caption": "18:40 Uhr, Anreisetag: „Wir stehen vor Hausnummer 12. Was jetzt?\"\n\nDas Portal hat die Buchung abgewickelt, die Zahlung, die Stornobedingungen. Alles korrekt. Nur steht in der Bestätigung eine Adresse – kein Eingang, kein Parkplatz, keine Tür.\n\nDie Provision zahlst du für die Buchung. Für diesen Abend zahlst du mit deiner Zeit.\n\nWas fragen deine Gäste, obwohl es angeblich im Portal steht?\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #gastgeber #fewovermieter #pension #gästehaus #campingplatz #vacationrental #strhost #guestexperience #dsgvo #madeinaustria #DACH #urlaub2026 #qrcode",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "18:40 Uhr, Anreisetag: „Wir stehen vor Hausnummer 12. Was jetzt?\"\nDas Portal hat Buchung, Zahlung und Storno erledigt. Den Eingang, den Parkplatz und die Tür nicht.\nWas fragen deine Gäste, obwohl es angeblich im Portal steht?\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gastgeber #Campingplatz #Gästemappe #DACH",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "18:40 Uhr: „Wir stehen vor Hausnummer 12. Was jetzt?\"\nDas Portal hat die Buchung. Den Abend hast du.\n\n#ferienwohnung #gastgeber #vermieter",
+          "time": "18:00"
+        }
+      },
+      "Donnerstag": {
+        "instagram": {
+          "caption": "„Alles schön – aber wir mussten viel nachfragen.\" Vier Sterne.\n\nKein Wort über Sauberkeit, kein Wort über Ausstattung, kein Wort über die Lage. Ein halber Stern weg für etwas, das mit der Wohnung nichts zu tun hat.\n\nGäste bewerten nicht nur, was da ist. Sie bewerten, wie sicher sie sich zurechtgefunden haben.\n\nWas steht in deiner schwächsten Bewertung?\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #gastgeber #fewovermieter #pension #gästehaus #campingplatz #vacationrental #strhost #guestexperience #dsgvo #madeinaustria #DACH #urlaub2026 #qrcode",
+          "time": "19:00"
+        },
+        "facebook": {
+          "caption": "„Alles schön – aber wir mussten viel nachfragen.\" Vier Sterne statt fünf.\nKein Wort über Sauberkeit, Ausstattung oder Lage. Bewertet wurde, wie sicher sie sich zurechtgefunden haben.\nWas steht in deiner schwächsten Bewertung?\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gastgeber #Campingplatz #Gästemappe #DACH",
+          "time": "20:00"
+        },
+        "tiktok": {
+          "caption": "„Alles schön – aber wir mussten viel nachfragen.\"\nVier Sterne. Für eine Wohnung, an der nichts fehlte.\n\n#ferienwohnung #gastgeber #vermieter",
+          "time": "18:00"
+        }
+      },
+      "Freitag": {
+        "instagram": {
+          "caption": "17:20 Uhr Ankunft. 17:52 Uhr: „Wie geht die Heizung an?\"\n\nDazwischen liegen 32 Minuten, in denen er gesucht hat. Erst das WLAN, dann die Heizung, dann den Rollladen. Die Nachricht an dich ist nicht der Anfang – sie ist das Ende einer halben Stunde erfolgloser Suche.\n\nWer die ersten 40 Minuten löst, hört den Rest der Woche wenig von seinen Gästen.\n\nWann kommt bei dir die erste Nachricht? Uhrzeit in die Kommentare.\n\nDemo offen für alle: gastinfo.eu\n\n#digitalgästemappe #ferienwohnung #ferienwohnungvermieter #airbnbhost #vermieter #gastgeber #fewovermieter #pension #gästehaus #campingplatz #vacationrental #strhost #guestexperience #dsgvo #madeinaustria #DACH #urlaub2026 #qrcode",
+          "time": "11:00"
+        },
+        "facebook": {
+          "caption": "17:20 Uhr Ankunft. 17:52 Uhr: „Wie geht die Heizung an?\"\nDazwischen: 32 Minuten Suche. Die Nachricht ist nicht der Anfang, sondern das Ende davon.\nWann kommt bei dir die erste Nachricht?\nDemo: gastinfo.eu\n\n#Ferienwohnung #Vermieter #Gastgeber #Campingplatz #Gästemappe #DACH",
+          "time": "13:00"
+        },
+        "tiktok": {
+          "caption": "17:20 Uhr angekommen. 17:52 Uhr: „Wie geht die Heizung an?\"\nDazwischen 32 Minuten Suche.\n\n#ferienwohnung #gastgeber #vermieter",
           "time": "18:00"
         }
       }
